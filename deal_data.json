@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "The Moat Moved Downstairs",
+    "subtitle": "How hyperscalers are buying power, capacity, and credit in the AI buildout",
+    "author": "Toluwalase Ayeni",
+    "asOf": "July 2026",
+    "sources": "Primary sources: company press releases, SEC filings, Bloomberg, CNBC, DCD. All capex per kW figures computed; disclosed vs imputed flagged."
+  },
+  "ppaDeals": [
+    {
+      "name": "Project Kilby",
+      "parties": "Chevron (Energy Forge One) → Microsoft",
+      "announced": "Jun 2026",
+      "type": "Behind the meter gas PPA",
+      "structure": "Colocated / BYOP, off grid",
+      "market": "Off grid (West Texas, Permian)",
+      "capacityGW": 2.7,
+      "capexB": 9.0,
+      "capexPerKW": 3333,
+      "capexFlag": "imputed (TD Securities $9B point; range $7B to $9B)",
+      "termYears": 20,
+      "impliedPPAPrice": 150,
+      "firstPower": "2028",
+      "status": "Pre FID (FID by YE2026)",
+      "note": "Vertically integrated gas to compute. Chevron builds, owns, operates generation behind the fence."
+    },
+    {
+      "name": "Wichita & Mustang Creek",
+      "parties": "TotalEnergies → Google",
+      "announced": "Feb 2026",
+      "type": "Grid connected solar PPA",
+      "structure": "Grid PPA",
+      "market": "ERCOT",
+      "capacityGW": 1.0,
+      "capexB": null,
+      "capexPerKW": null,
+      "capexFlag": "not disclosed",
+      "termYears": 15,
+      "annualEnergyTWh": 1.87,
+      "impliedCapacityFactor": 0.213,
+      "firstPower": "Construction from Q2 2026",
+      "status": "Construction starting",
+      "note": "Largest TotalEnergies US renewable PPA. Additive to the ERCOT grid, not behind the meter."
+    },
+    {
+      "name": "Clearway portfolio",
+      "parties": "Clearway (50% TotalEnergies) → Google",
+      "announced": "Jan 2026",
+      "type": "Grid connected wind and solar PPA",
+      "structure": "Grid PPA, multi market",
+      "market": "SPP, ERCOT, PJM",
+      "capacityGW": 1.17,
+      "capexB": 2.4,
+      "capexPerKW": 2051,
+      "capexFlag": "disclosed",
+      "termYears": 20,
+      "firstPower": "2027 to 2028",
+      "status": "Construction 2026",
+      "note": "Three projects across Missouri, Texas, West Virginia including Goat Mountain wind repower."
+    }
+  ],
+  "maDeals": [
+    {
+      "name": "NextEra / Dominion merger",
+      "announced": "May 2026",
+      "acquirer": "NextEra Energy",
+      "target": "Dominion Energy",
+      "structure": "All stock, fixed exchange ratio (0.8138 NEE per D share)",
+      "equityValueB": 67,
+      "buyerType": "Strategic (utility)",
+      "status": "Announced, definitive agreement",
+      "expectedClose": "2027 (12 to 18 months)",
+      "rationale": "Creates the world's largest regulated utility; pro forma NEE ~74.5% / Dominion ~25.5%."
+    },
+    {
+      "name": "AES take private",
+      "announced": "Mar 2026",
+      "acquirer": "GIP (BlackRock) and EQT consortium",
+      "target": "AES Corporation",
+      "structure": "All cash take private, $15.00 per share",
+      "equityValueB": 10.7,
+      "enterpriseValueB": 33.4,
+      "premium": 0.403,
+      "buyerType": "Financial (infra funds)",
+      "status": "Stockholders approved Jun 2026 (97%+)",
+      "expectedClose": "Late 2026 / early 2027",
+      "rationale": "Infra capital buying a listed IPP with data center contracted renewables at a 40% premium."
+    },
+    {
+      "name": "Constellation / Calpine",
+      "announced": "Jan 2025",
+      "acquirer": "Constellation Energy",
+      "target": "Calpine Corp",
+      "structure": "Cash and stock (50M CEG shares + $4.5B cash)",
+      "equityValueB": 16.4,
+      "enterpriseValueB": 29.1,
+      "buyerType": "Strategic (IPP)",
+      "status": "Closed Jan 7 2026",
+      "rationale": "Creates the largest US power generator; nuclear plus gas fleet meeting AI demand."
+    },
+    {
+      "name": "Capital Power / Hummel & Rolling Hills",
+      "announced": "Apr 2025",
+      "acquirer": "Capital Power",
+      "target": "Hummel Station and Rolling Hills (from LS Power)",
+      "structure": "All cash asset purchase, US$2.2B net",
+      "equityValueB": 2.2,
+      "buyerType": "Strategic (IPP)",
+      "status": "Closed Jun 9 2025",
+      "rationale": "Strategic entry into PJM, the largest US power market."
+    },
+    {
+      "name": "EQT / Copia Power",
+      "announced": "Jul 2026",
+      "acquirer": "EQT (Infrastructure VII)",
+      "target": "Copia Power (from Carlyle)",
+      "structure": "Private platform sale, $2.6B equity valuation",
+      "equityValueB": 2.6,
+      "buyerType": "Financial (infra fund)",
+      "status": "Announced Jul 9 2026",
+      "expectedClose": "By end of 2026",
+      "rationale": "Purest 'power is the product' platform trade in the AI infrastructure wave."
+    }
+  ],
+  "financingDeals": [
+    {
+      "name": "Hyperion JV",
+      "parties": "Meta / Blue Owl",
+      "announced": "Oct 2025",
+      "tenant": "Meta (20% JV owner, lessee, operator)",
+      "capitalPartners": "Blue Owl (80% equity, ~$7B cash), PIMCO (~$18B debt anchor), BlackRock ($3B+), Morgan Stanley (arranger)",
+      "structure": "Development JV via SPV; operating lease back to Meta (4 yr initial) + 16 yr capped residual value guarantee; A+ rated 144A bonds",
+      "debtB": 26,
+      "equityB": 3,
+      "totalB": 29,
+      "assetValueB": 27,
+      "capacityGW": 2.0,
+      "capexPerKW": 13500,
+      "leverage": "~90% (equity cushion 8 to 10%)",
+      "leaseTermYears": 4,
+      "creditSupport": "Meta operating lease + 16 yr capped residual value guarantee",
+      "location": "Richland Parish, LA",
+      "status": "Closed Oct 21 2025",
+      "note": "Meta contributed the under construction campus and received a $3B one time payout. Auction ran Apollo + KKR vs PIMCO + Blue Owl; 144A format won for syndication."
+    },
+    {
+      "name": "Hyperion 5GW expansion",
+      "parties": "Meta",
+      "announced": "Jul 2026",
+      "structure": "Scope revision; expansion financing undisclosed (same JV, second vehicle, or balance sheet)",
+      "assetValueB": 50,
+      "capacityGW": 5.0,
+      "capexPerKW": 10000,
+      "location": "Richland Parish, LA",
+      "status": "Announced Jul 13 2026",
+      "note": "2GW to 5GW, $27B to $50B+. Entergy package: 10 gas plants (5.2GW), 2.5GW renewables, 240 mi transmission, est. $2.65B customer benefits over 20 yrs, $1B+ community infrastructure. Watch item: who funds the ~$23B delta."
+    },
+    {
+      "name": "Stargate Abilene",
+      "parties": "Crusoe JV → Oracle (serving OpenAI)",
+      "announced": "2024 to 2025",
+      "tenant": "Oracle (lessee under the Stargate program)",
+      "capitalPartners": "Blue Owl Real Assets, Primary Digital Infrastructure, JPMorgan ($2.3B loan)",
+      "structure": "Development JV; developer Crusoe; campus leased to Oracle",
+      "totalB": 15,
+      "capacityGW": 1.2,
+      "creditSupport": "Oracle lease (OpenAI Oracle contract expanded to $300B over 5 yrs)",
+      "location": "Abilene, TX",
+      "status": "First halls live Sep 2025",
+      "note": "First Stargate site, ~1.2GW, 8 buildings. Related: Blue Owl ~$3B equity into Stargate New Mexico (up to 4.5GW, up to $18B loans)."
+    },
+    {
+      "name": "Justified Data lease",
+      "parties": "Anthropic / TeraWulf",
+      "announced": "Jul 2026",
+      "tenant": "Anthropic (lessee)",
+      "structure": "Direct 20 yr lease + two 5 yr renewal options; single tenant, purpose built",
+      "contractedRevenueB": 19,
+      "rentPerMWYearM": 2.4,
+      "assetValueB": 4.0,
+      "capexFlag": "imputed ($3.2 to 4B analyst estimate, not disclosed)",
+      "capacityGW": 0.401,
+      "capexPerKW": 9975,
+      "leaseTermYears": 20,
+      "creditSupport": "Expected to be supported by an investment grade credit; supporter undisclosed (watch WULF filings)",
+      "location": "Hawesville, KY (former Century Aluminum site, ~480MW available power)",
+      "status": "Announced Jul 6 2026; first power H2 2027",
+      "note": "Contracted revenue (~$19B) exceeds TeraWulf market cap (~$12B). The credit is the collateral: value rests on the tenant promise, not the building."
+    }
+  ],
+  "thesis": {
+    "clocks": ["Cash (capex leaves today)", "Expense (depreciation and rent arrive over decades)", "Disclosure (commitments hide in footnotes until commencement)"],
+    "keyStats": [
+      { "label": "Signed but not yet commenced lease commitments across hyperscalers", "value": "$400B+", "source": "10-K/10-Q lease footnotes" },
+      { "label": "Google capex as share of operating cash flow", "value": "55%", "note": "$91.4B capex vs ~$165B OCF; ~$73B FCF surplus" },
+      { "label": "Amazon capex as share of operating cash flow", "value": "95%", "note": "FCF compressed to ~$8B" },
+      { "label": "Meta 2026 capex guidance", "value": "$125B to $145B", "note": "excludes JV debt held off balance sheet" }
+    ],
+    "argument": "Model weights are becoming free; megawatts are not. As open weight models commoditize the middle of the stack, durable value migrates to the physical layer: chips, buildings, power, and interconnection. The structures in this deck are the best informed players locking up decades of that layer. Capital structure determines when and how you suffer if wrong, not whether."
+  }
+}
