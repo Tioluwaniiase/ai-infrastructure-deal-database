@@ -186,7 +186,26 @@
       "location": "Hawesville, KY (former Century Aluminum site, ~480MW available power)",
       "status": "Announced Jul 6 2026; first power H2 2027",
       "note": "Contracted revenue (~$19B) exceeds TeraWulf market cap (~$12B). The credit is the collateral: value rests on the tenant promise, not the building. Verified through extraction pipeline, Jul 2026."
-    }
+    },
+    {
+      "name": "Fluidstack Lake Mariner",
+      "parties": "Fluidstack / TeraWulf",
+      "announced": "Aug 2025",
+      "tenant": "Fluidstack (lessee); serves frontier AI labs",
+      "capitalPartners": "Google (lease backstop + warrant holder); project debt lenders undisclosed; Schneider Electric / Motivair (power and liquid cooling, $290M+ delivered)",
+      "structure": "HPC colocation leases (CB-3, CB-4, CB-5); 10 yr initial terms + two 5 yr extension options; Google backstops Fluidstack lease obligations to enable project related debt financing; warrants issued to Google",
+      "contractedRevenueB": 6.7,
+      "rentPerMWYearM": 1.85,
+      "assetValueB": null,
+      "capexFlag": "not disclosed",
+      "capacityGW": 0.360,
+      "capexPerKW": null,
+      "leaseTermYears": 10,
+      "creditSupport": "Google backstop of Fluidstack lease obligations: $1.8B initial, raised to ~$3.2B with CB-5; warrants for ~41M + 32.5M shares (~14% pro forma equity stake)",
+      "location": "Lake Mariner, Cayuga (Western NY); NYISO Zone A, ~89% carbon free power; dual 345 kV transmission",
+      "status": "CB-3 (42MW) + CB-4 (162MW) announced Aug 14 2025; CB-5 (+160MW) Aug 18 2025; ~40MW live H1 2026, full buildout targeted by end 2026",
+      "note": "Fluidstack's own deal and the template for the desk's playbook: a startup neocloud's 10 yr lease made bankable by Google's investment grade backstop. Google is customer, creditor, and ~14% shareholder at once. Rent ~$1.85M per MW year (computed from disclosed figures: $3.7B / 10 yr / ~200MW), below the Anthropic Hawesville rate of $2.4M; the spread reflects tenant, site, and term. Initial 200MW at ~$3.7B, up to ~$8.7B with extensions; full 360MW at ~$6.7B, up to ~$16B with extensions. Open question: GPU ownership and whether Google is the ultimate compute offtaker (watch WULF and Fluidstack disclosures). The disclosed supporter counterpart to the still undisclosed Anthropic Hawesville credit. Verified from WULF press releases and 8-K, Jul 2026."
+}
   ],
   "thesis": {
     "clocks": ["Cash (capex leaves today)", "Expense (depreciation and rent arrive over decades)", "Disclosure (commitments hide in footnotes until commencement)"],
