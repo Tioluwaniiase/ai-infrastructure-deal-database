@@ -1,9 +1,9 @@
-{
+
   "meta": {
     "title": "The Moat Moved Downstairs",
     "subtitle": "How hyperscalers are buying power, capacity, and credit in the AI buildout",
     "author": "Toluwalase Ayeni",
-    "asOf": "July 2026",
+    "asOf": "August 2026",
     "sources": "Primary sources: company press releases, SEC filings, Bloomberg, CNBC, DCD. All capex per kW figures computed; disclosed vs imputed flagged."
   },
   "ppaDeals": [
@@ -15,7 +15,7 @@
       "structure": "Colocated / BYOP, off grid",
       "market": "Off grid (West Texas, Permian)",
       "capacityGW": 2.7,
-      "capexB": 9.0,
+      "capexB": 9,
       "capexPerKW": 3333,
       "capexFlag": "imputed (TD Securities $9B point; range $7B to $9B)",
       "termYears": 20,
@@ -31,7 +31,7 @@
       "type": "Grid connected solar PPA",
       "structure": "Grid PPA",
       "market": "ERCOT",
-      "capacityGW": 1.0,
+      "capacityGW": 1,
       "capexB": null,
       "capexPerKW": null,
       "capexFlag": "not disclosed",
@@ -128,20 +128,52 @@
       "parties": "Meta / Blue Owl",
       "announced": "Oct 2025",
       "tenant": "Meta (20% JV owner, lessee, operator)",
-      "capitalPartners": "Blue Owl (80% equity, ~$7B cash), PIMCO (~$18B debt anchor), BlackRock ($3B+), Morgan Stanley (arranger)",
-      "structure": "Development JV via SPV; operating lease back to Meta (4 yr initial) + 16 yr capped residual value guarantee; A+ rated 144A bonds",
-      "debtB": 26,
-      "equityB": 3,
+      "capitalPartners": "Blue Owl funds 80% (~$7B cash), PIMCO (~$18B debt anchor), BlackRock ($3B, bond investor not equity partner), Morgan Stanley (arranger); issuer Beignet Investor LLC",
+      "structure": "Development JV via bankruptcy remote SPV; BlackRock is a bondholder, Blue Owl is the 80% equity; Meta contributes land and CIP and takes a ~$3B one time distribution to align to 80/20; operating lease back to Meta (4 yr initial term, extension options) + 16 yr capped residual value guarantee; A+ rated 144A for life bonds",
+      "debtB": 27.294,
+      "equityB": 7,
       "totalB": 29,
       "assetValueB": 27,
-      "capacityGW": 2.0,
+      "capacityGW": 2,
       "capexPerKW": 13500,
-      "leverage": "~90% (equity cushion 8 to 10%)",
+      "leverage": "reported figures vary; do not impute a clean ratio without the OM (Blue Owl ~$7B cash equity + Meta contributed basis against $27.294B notes)",
       "leaseTermYears": 4,
-      "creditSupport": "Meta operating lease + 16 yr capped residual value guarantee",
+      "creditSupport": "Meta operating lease + 16 yr capped residual value guarantee (threshold not publicly quantified, unlike El Paso)",
       "location": "Richland Parish, LA",
-      "status": "Closed Oct 21 2025",
-      "note": "Meta contributed the under construction campus and received a $3B one time payout. Auction ran Apollo + KKR vs PIMCO + Blue Owl; 144A format won for syndication."
+      "status": "Notes priced Oct 16 2025; JV announced Oct 21 2025",
+      "provenance": {
+        "disclosed": "80/20 Blue Owl / Meta split, ~$27B total dev cost, Blue Owl ~$7B cash, Meta ~$3B one time distribution, Meta contributed land and CIP, 4 yr lease + extensions, 16 yr RVG, $27.294B Beignet notes at 6.581% due May 30 2049, T+225, A+ S&P single agency, 144A for life",
+        "computedFromDisclosed": "capex ~$13,500 per kW (imputed from reported $27B / 2 GW)",
+        "analystImputed": "equity cushion reported inconsistently across outlets; the 90% leverage figure previously carried does not reconcile and was removed",
+        "notDisclosed": "RVG threshold amount and step down, rent per MW year, precise equity vs debt split reconciliation, guarantee triggers and caps"
+      },
+      "note": "First disclosed instance of Meta's off balance sheet JV template, refined at El Paso Jul 2026. Beignet Investor LLC is the bankruptcy remote issuer; naming it signals filing level reading. BlackRock appears as a $3B bond investor, NOT the equity partner (that is Blue Owl) and NOT to be confused with the separate Meta / BlackRock El Paso JV. Auction ran Apollo + KKR vs PIMCO + Blue Owl; 144A won for syndication. Corrected Aug 2026: debt was carried at $26B, actual $27.294B; 90% leverage note removed as unreconciled."
+    },
+    {
+      "name": "El Paso campus JV",
+      "parties": "Meta / BlackRock (with GIP and HPS)",
+      "announced": "Jul 2026",
+      "tenant": "Meta (20% JV owner, lessee, initial sole occupant, operator)",
+      "capitalPartners": "BlackRock funds 80% (~$4.9B cash), GIP and HPS (BlackRock infrastructure and private credit arms); $12.5B debt financing funds part of BlackRock's contribution",
+      "structure": "Development JV; BlackRock 80% / Meta 20%; ~$14B total development cost funded pro rata; Meta contributes land and CIP (~$2.3B) and takes a ~$1B one time distribution to align to 80/20; operating lease back to Meta (4 yr initial term, four extension options, ~20 yr potential) + 16 yr residual value guarantee",
+      "debtB": 12.5,
+      "equityB": 7.2,
+      "totalB": 14,
+      "assetValueB": 14,
+      "capacityGW": 1,
+      "capexPerKW": 14000,
+      "capexFlag": "computed: ~$14B total development cost / 1 GW = ~$14,000 per kW (includes power, cooling, connectivity per release)",
+      "leaseTermYears": 4,
+      "creditSupport": "Meta operating lease + residual value guarantee, aggregate threshold ~$13B decreasing over time; within first 16 yrs Meta pays shortfall between fair value and the RVG threshold for covered property",
+      "location": "El Paso, TX",
+      "status": "Announced Jul 28 2026; expected to close within days; capacity online from 2028",
+      "provenance": {
+        "disclosed": "80/20 split, ~$14B total dev cost, Meta land and CIP ~$2.3B, BlackRock cash ~$4.9B, Meta $1B one time distribution, $12.5B debt financing, 1 GW capacity, online 2028, 4 yr lease with four extensions across ~20 yr, RVG threshold ~$13B decreasing, 16 yr RVG window, Meta >$10B site investment figure, Morgan Stanley and JP Morgan advised Meta",
+        "computedFromDisclosed": "equity ~$7.2B (2.3 contributed + 4.9 cash); capex ~$14,000 per kW; RVG threshold ~93% of total dev cost at inception",
+        "analystImputed": "none",
+        "notDisclosed": "rent per MW year, debt terms and rating, RVG step down schedule, whether debt sits at JV or a Beignet style issuer, refinancing plan"
+      },
+      "note": "Second disclosed instance of Meta's off balance sheet JV template after Hyperion: identical 80/20, four year lease inside a 20 year envelope, 16 yr RVG, contributed land plus CIP, one time true up distribution. El Paso is the cleaner data point because the RVG threshold is quantified (~$13B, decreasing) where Hyperion's was not. Meta has effectively productized this structure. Advisors overlap with Hyperion (Morgan Stanley, Kirkland for the capital partner). Watch: whether the $12.5B debt terms out into a Beignet style 144A issue, giving a third notching data point alongside Hyperion and the Nexus bridge."
     },
     {
       "name": "Hyperion 5GW expansion",
@@ -149,7 +181,7 @@
       "announced": "Jul 2026",
       "structure": "Scope revision; expansion financing undisclosed (same JV, second vehicle, or balance sheet)",
       "assetValueB": 50,
-      "capacityGW": 5.0,
+      "capacityGW": 5,
       "capexPerKW": 10000,
       "location": "Richland Parish, LA",
       "status": "Announced Jul 13 2026",
@@ -177,7 +209,7 @@
       "structure": "Direct 20 yr lease + two 5 yr renewal options; single tenant, purpose built",
       "contractedRevenueB": 19,
       "rentPerMWYearM": 2.4,
-      "assetValueB": 4.0,
+      "assetValueB": 4,
       "capexFlag": "imputed ($3.2 to 4B analyst estimate, not disclosed)",
       "capacityGW": 0.401,
       "capexPerKW": 9975,
@@ -185,35 +217,87 @@
       "creditSupport": "Expected to be supported by an investment grade credit; supporter undisclosed (watch WULF filings)",
       "location": "Hawesville, KY (former Century Aluminum site, ~480MW available power)",
       "status": "Announced Jul 6 2026; first power H2 2027",
-      "note": "Contracted revenue (~$19B) exceeds TeraWulf market cap (~$12B). The credit is the collateral: value rests on the tenant promise, not the building. Verified through extraction pipeline, Jul 2026."
+      "note": "Contracted revenue (~$19B) exceeds TeraWulf market cap (~$12B). The credit is the collateral: value rests on the tenant promise, not the building."
     },
     {
-      "name": "Fluidstack Lake Mariner",
-      "parties": "Fluidstack / TeraWulf",
-      "announced": "Aug 2025",
-      "tenant": "Fluidstack (lessee); serves frontier AI labs",
-      "capitalPartners": "Google (lease backstop + warrant holder); project debt lenders undisclosed; Schneider Electric / Motivair (power and liquid cooling, $290M+ delivered)",
-      "structure": "HPC colocation leases (CB-3, CB-4, CB-5); 10 yr initial terms + two 5 yr extension options; Google backstops Fluidstack lease obligations to enable project related debt financing; warrants issued to Google",
-      "contractedRevenueB": 6.7,
-      "rentPerMWYearM": 1.85,
-      "assetValueB": null,
-      "capexFlag": "not disclosed",
-      "capacityGW": 0.360,
+      "name": "Nexus Hubbard campus financing",
+      "parties": "Nexus Data Centers / Anthropic / Google / Morgan Stanley led bank consortium",
+      "announced": "Jul 2026 (reported; could be announced as soon as Thursday)",
+      "tenant": "Anthropic (4 leases plus corresponding PPAs)",
+      "capitalPartners": "Morgan Stanley (lead arranger, bank consortium), Evercore (sole financial advisor to Nexus), Google (guarantor and ~20% equity), Broadcom (separate vendor financing for TPUs)",
+      "structure": "SPV project financing: $14B bridge loan plus revolving credit facility. Behind the meter 1.6 GW natural gas plant integrated with campus. Google guarantees Anthropic lease and power payment obligations across 4 leases and their PPAs; Google receives ~20% equity in the data center and power project. Chips financed separately by Broadcom vendor financing.",
+      "debtB": 15,
+      "capacityGW": 1.6,
       "capexPerKW": null,
-      "leaseTermYears": 10,
-      "creditSupport": "Google backstop of Fluidstack lease obligations: $1.8B initial, raised to ~$3.2B with CB-5; warrants for ~41M + 32.5M shares (~14% pro forma equity stake)",
-      "location": "Lake Mariner, Cayuga (Western NY); NYISO Zone A, ~89% carbon free power; dual 345 kV transmission",
-      "status": "CB-3 (42MW) + CB-4 (162MW) announced Aug 14 2025; CB-5 (+160MW) Aug 18 2025; ~40MW live H1 2026, full buildout targeted by end 2026",
-      "note": "Fluidstack's own deal and the template for the desk's playbook: a startup neocloud's 10 yr lease made bankable by Google's investment grade backstop. Google is customer, creditor, and ~14% shareholder at once. Rent ~$1.85M per MW year (computed from disclosed figures: $3.7B / 10 yr / ~200MW), below the Anthropic Hawesville rate of $2.4M; the spread reflects tenant, site, and term. Initial 200MW at ~$3.7B, up to ~$8.7B with extensions; full 360MW at ~$6.7B, up to ~$16B with extensions. Open question: GPU ownership and whether Google is the ultimate compute offtaker (watch WULF and Fluidstack disclosures). The disclosed supporter counterpart to the still undisclosed Anthropic Hawesville credit. Verified from WULF press releases and 8-K, Jul 2026."
-}
+      "capexFlag": "not disclosed: total project cost not stated, so capex per kW cannot be computed. $15B is debt quantum only, not total cost.",
+      "creditSupport": "Google guarantee of lease and power payment obligations, sized to the minimum the banks required. Google accounts for backstops as credit derivatives. On tenant default Google may assume the leases and self use or sublease, or terminate the backstop obligation by paying a fee.",
+      "powerSource": "Behind the meter natural gas, 1.6 GW, sited for proximity to major gas pipelines, expressly to avoid utility interconnection queue. Campus could grow past 1.6 GW.",
+      "chips": "Google TPUs, codesigned with Broadcom, financed via separate Broadcom vendor financing deal with Anthropic",
+      "location": "Hubbard, Texas",
+      "status": "Advanced talks reported; construction began early 2025",
+      "sponsorBackground": "Nexus founded by energy industry veterans from large scale natural gas projects. CEO Ivan Van der Walt formerly of NextDecade (LNG export developer); NextDecade former CFO also joined.",
+      "provenance": {
+        "disclosed": "debt quantum $15B, bridge $14B plus revolver, 1.6 GW BTM gas, ~20% Google equity, 4 leases plus PPAs guaranteed, Morgan Stanley lead, Evercore advisor, Broadcom vendor financing, construction start early 2025, Alphabet credit derivative max exposure $43.8B as of Jun 30 2026",
+        "computedFromDisclosed": "none yet; total project cost undisclosed",
+        "analystImputed": "expectation that the bridge is refinanced into permanent capital (bonds or ABS) within 12 to 24 months, based on bridge structure and phase convention",
+        "notDisclosed": "total project cost, guarantee cap amount, backstop termination fee, Broadcom financing terms, lease term years, rent per MW year, Anthropic lease start dates"
+      },
+      "note": "Third Google backstop where Anthropic is ultimate customer, after TeraWulf and Hut8. Pattern: credit support compensated with ~20% equity or equity linked position rather than a fee, matching Hyperion 80/20 and Equinix xScale 80/20. Guarantee is optionality not charity: Google can step into contracted capacity on default. Vendor financing circularity: the chip supplier guarantees the project that buys its chips. Comparable: Nvidia in talks on a reported $250B backstop for an OpenAI Ohio campus up to 10 GW. Anthropic has signed 12+ preliminary leases targeting 10+ GW, leasing led by Tim Hughes, formerly of Stack Infrastructure.",
+      "watchItems": "1) Alphabet credit derivative maximum potential exposure line, quarter over quarter, as the aggregate thesis metric. 2) The bridge take out: size, format, and whether it prices off Google support rather than Nexus credit, giving a second Hyperion style notching data point. 3) Whether gas pipeline capacity becomes the new binding queue, replacing transmission."
+    },
+    {
+      "name": "SB Energy Ohio campus (Nvidia backstop)",
+      "parties": "SB Energy (SoftBank) / OpenAI / Nvidia / US Department of Commerce / Government of Japan",
+      "announced": "Jul 2026 (in talks; terms not finalized and deal could fall apart)",
+      "tenant": "OpenAI (advanced talks to lease; would be OpenAI's first project as direct tenant). Anthropic, Microsoft and Google also spoke to Commerce about the site.",
+      "capitalPartners": "Nvidia (guarantor of a series of financing vehicles, ~$250B; separately has invested $30B in OpenAI and is discussing financing chip purchases of up to ~$350B), Government of Japan ($33B into the power project under a tariff trade deal), SoftBank (SB Energy owner and major OpenAI investor), US federal government (land and power allocation)",
+      "structure": "Nvidia guarantees a series of financing vehicles covering the data center lease and the buildout debt, expressly NOT the chips. Chips financed separately in a parallel Nvidia arrangement. Power project funded by Japan at $33B on federal land, operated by SB Energy for a fee paid by the US government. Power sales revenue split between Japan and the US until Japan recoups its $33B, after which the US government receives 90% of revenue.",
+      "totalB": 500,
+      "guaranteeB": 250,
+      "capacityGW": 10,
+      "capexPerKW": null,
+      "capexFlag": "not computable: the >$500B figure explicitly includes chips, so it cannot be divided by capacity to produce a facility capex per kW comparable to other records.",
+      "creditSupport": "Nvidia guarantee of roughly $250B across financing vehicles, covering lease and buildout debt but not chips. Rationale as reported: OpenAI has no investment grade credit rating as an unprofitable private company, so the guarantee lets the developer raise debt on better terms than OpenAI could alone.",
+      "powerSource": "Natural gas power project on federal land, funded by Japan, operated by SB Energy. Power allocation controlled by the US government with Commerce Secretary Howard Lutnick involved in deciding who receives it.",
+      "location": "Southern Ohio, decommissioned uranium enrichment site roughly 50 miles south of Columbus (federal land)",
+      "status": "In talks; groundbreaking held March 2026 with Lutnick, Son and Energy Secretary Chris Wright. First phase expected 2028 at roughly 800 MW.",
+      "provenance": {
+        "disclosed": "~$250B Nvidia guarantee, 10 GW capacity, >$500B total including chips, $33B Japanese investment, revenue split terms, 90% US share post recoupment, first phase 2028 at ~800MW, federal land siting, Nvidia $30B invested in OpenAI, ~$350B potential chip financing, OpenAI compute spend projection raised to ~$750B through 2030 from ~$600B, Nvidia ~$5T market value, Nvidia annual report risk disclosure on customer credit exposure",
+        "computedFromDisclosed": "first phase is 8% of ultimate capacity (800MW of 10GW); guarantee is roughly half of stated total project cost",
+        "analystImputed": "the Japan recoupment then 90/10 split is structurally a preferred return followed by a sponsor promote, applied to a sovereign rather than a fund",
+        "notDisclosed": "lease term, rent per MW year, the identity and structure of the financing vehicles, guarantee triggers and caps, chip financing terms, what SB Energy's operating fee is"
+      },
+      "note": "INDUSTRY TERM CAPTURED: the arrangement is described within the industry as a credit wrapper, where investment grade technology companies use their balance sheets to help smaller companies borrow for infrastructure. Same family as Google backstopping Anthropic at TeraWulf, Hut8, and Nexus Hubbard, described as partly intended to increase sales of Google's own TPUs. Federal land is being used expressly to avoid the permitting and local opposition snarling projects elsewhere. Nvidia's own annual report warns that data center funding arrangements could lower near term cash flows and increase exposure to customer credit risk, so the guarantor has disclosed the risk it is taking.",
+      "watchItems": "1) Whether the deal closes at all, since terms are not finalized. 2) The three layer circularity: Nvidia equity in OpenAI, Nvidia guarantee of OpenAI's lease, Nvidia financing of OpenAI's chip purchases. 3) Government allocated power as a new siting channel: who else receives allocations and on what basis. 4) Whether federal land siting becomes a repeatable permitting bypass."
+    }
   ],
   "thesis": {
-    "clocks": ["Cash (capex leaves today)", "Expense (depreciation and rent arrive over decades)", "Disclosure (commitments hide in footnotes until commencement)"],
+    "clocks": [
+      "Cash (capex leaves today)",
+      "Expense (depreciation and rent arrive over decades)",
+      "Disclosure (commitments hide in footnotes until commencement)"
+    ],
     "keyStats": [
-      { "label": "Signed but not yet commenced lease commitments across hyperscalers", "value": "$400B+", "source": "10-K/10-Q lease footnotes" },
-      { "label": "Google capex as share of operating cash flow", "value": "55%", "note": "$91.4B capex vs ~$165B OCF; ~$73B FCF surplus" },
-      { "label": "Amazon capex as share of operating cash flow", "value": "95%", "note": "FCF compressed to ~$8B" },
-      { "label": "Meta 2026 capex guidance", "value": "$125B to $145B", "note": "excludes JV debt held off balance sheet" }
+      {
+        "label": "Signed but not yet commenced lease commitments across hyperscalers",
+        "value": "$400B+",
+        "source": "10-K/10-Q lease footnotes"
+      },
+      {
+        "label": "Google capex as share of operating cash flow",
+        "value": "55%",
+        "note": "$91.4B capex vs ~$165B OCF; ~$73B FCF surplus"
+      },
+      {
+        "label": "Amazon capex as share of operating cash flow",
+        "value": "95%",
+        "note": "FCF compressed to ~$8B"
+      },
+      {
+        "label": "Meta 2026 capex guidance",
+        "value": "$125B to $145B",
+        "note": "excludes JV debt held off balance sheet"
+      }
     ],
     "argument": "Model weights are becoming free; megawatts are not. As open weight models commoditize the middle of the stack, durable value migrates to the physical layer: chips, buildings, power, and interconnection. The structures in this deck are the best informed players locking up decades of that layer. Capital structure determines when and how you suffer if wrong, not whether."
   }
