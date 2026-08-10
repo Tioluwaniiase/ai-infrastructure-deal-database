@@ -34,7 +34,8 @@
           "label": "Chevron newsroom, Q2 2026",
           "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center"
         }
-      ]
+      ],
+      "summary": "Chevron is building 2.7 gigawatts of gas fired power in West Texas that feeds a Microsoft data centre directly, bypassing the public grid and its multi year connection queue."
     },
     {
       "name": "Wichita & Mustang Creek",
@@ -60,7 +61,8 @@
           "label": "TotalEnergies US newsroom",
           "url": "https://corporate.totalenergies.us/news/totalenergies-provide-1-gw-solar-capacity-power-googles-data-centers-texas-15-years"
         }
-      ]
+      ],
+      "summary": "Google contracted to buy the output of roughly 1 gigawatt of new Texas solar farms for 15 years, which is what allows the developer to raise the money to build them."
     },
     {
       "name": "Clearway portfolio",
@@ -84,7 +86,8 @@
           "label": "Clearway Energy Group press release",
           "url": "https://www.clearwayenergygroup.com/press-releases/clearway-signs-portfolio-of-power-purchase-agreements-with-google-totaling-nearly-1-2-gw-across-three-states/"
         }
-      ]
+      ],
+      "summary": "Google contracted to buy the output of three wind and solar projects across three states for 20 years."
     },
     {
       "name": "Microsoft and Constellation, Crane Clean Energy Center",
@@ -109,7 +112,8 @@
           "label": "Constellation press release, 20 September 2024",
           "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html"
         }
-      ]
+      ],
+      "summary": "Microsoft agreed to buy the power from a shut down nuclear reactor at Three Mile Island for 20 years, which is what pays for restarting it."
     },
     {
       "name": "Meta and Constellation, Clinton Clean Energy Center",
@@ -135,7 +139,8 @@
           "label": "Constellation press release, 3 June 2025",
           "url": "https://www.constellationenergy.com/news/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html"
         }
-      ]
+      ],
+      "summary": "Meta agreed to buy the output of an Illinois nuclear plant for 20 years, replacing a state subsidy that was about to expire and keeping the plant open."
     },
     {
       "name": "Meta and Vistra, three PJM nuclear plants",
@@ -163,7 +168,8 @@
           "label": "Vistra investor relations, 9 January 2026",
           "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid"
         }
-      ]
+      ],
+      "summary": "Meta contracted for 20 years with three nuclear plants in Ohio and Pennsylvania, including funding upgrades that add new capacity rather than just buying existing output."
     },
     {
       "name": "Meta and TerraPower, Natrium units",
@@ -187,7 +193,8 @@
           "label": "TerraPower announcement",
           "url": "https://www.terrapower.com/terrapower-announces-deal-with-meta"
         }
-      ]
+      ],
+      "summary": "Meta is funding the development of new advanced reactors that do not exist yet, with rights to buy the power if they get built, the first as early as 2032."
     },
     {
       "name": "Meta and Oklo, Pike County Ohio",
@@ -211,7 +218,8 @@
           "label": "Oklo newsroom, 2026",
           "url": "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx"
         }
-      ]
+      ],
+      "summary": "Meta is funding early development of a nuclear campus in Ohio using reactors that have never been built commercially, potentially online in 2030."
     },
     {
       "name": "Amazon and X-energy",
@@ -237,7 +245,8 @@
           "label": "X-energy newsroom, 16 October 2024",
           "url": "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/"
         }
-      ]
+      ],
+      "summary": "Amazon led a $500 million investment into a small reactor developer and set a joint target of building more than 5 gigawatts by 2039, starting with a 320 megawatt project in Washington state."
     },
     {
       "name": "Amazon and Talen Energy, Susquehanna",
@@ -262,7 +271,8 @@
           "label": "Talen Energy investor relations, 11 June 2025",
           "url": "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-expands-nuclear-energy-relationship-amazon"
         }
-      ]
+      ],
+      "summary": "Amazon contracted for 1,920 megawatts from a Pennsylvania nuclear plant through 2042, and the arrangement was restructured so the power goes through the public grid rather than directly to the data centre."
     },
     {
       "name": "Google and Kairos Power",
@@ -285,7 +295,8 @@
           "label": "Kairos Power updates, 14 October 2024",
           "url": "https://www.kairospower.com/updates/google-and-kairos-power-partner-to-deploy-500-mw-of-clean-electricity-generation"
         }
-      ]
+      ],
+      "summary": "Google agreed to buy power from a fleet of advanced reactors totalling 500 megawatts, the first expected by 2030, from a company whose demonstration reactor is still under construction."
     },
     {
       "name": "Google and Elementl Power",
@@ -309,7 +320,8 @@
           "label": "Elementl Power release via PR Newswire, 7 May 2025",
           "url": "https://www.prnewswire.com/news-releases/elementl-power-and-google-sign-strategic-agreement-to-develop-locations-for-advanced-nuclear-projects-302447957.html"
         }
-      ]
+      ],
+      "summary": "Google is funding the early groundwork on three potential nuclear sites and holds an option to buy the power if they are ever completed, with no technology chosen yet."
     },
     {
       "name": "Google and NextEra, Duane Arnold restart",
@@ -333,7 +345,8 @@
           "label": "NextEra Energy investor relations, 27 October 2025",
           "url": "https://www.investor.nexteraenergy.com/news-and-events/news-releases/2025/10-27-2025-203948689"
         }
-      ]
+      ],
+      "summary": "Google agreed to buy power for 25 years from an Iowa nuclear plant that shut in 2020, funding its restart, with Iowa customers explicitly bearing none of the cost."
     },
     {
       "name": "Terrestrial Energy and Riot Platforms",
@@ -356,7 +369,8 @@
           "label": "Riot Platforms newsroom, 6 May 2026",
           "url": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/"
         }
-      ]
+      ],
+      "summary": "A non binding agreement to explore building reactors next to data centres in Texas and Kentucky, carrying a 4 gigawatt headline figure but no commitment."
     },
     {
       "name": "Meta and Invenergy, four project portfolio",
@@ -380,7 +394,8 @@
           "label": "Invenergy news, 26 June 2025",
           "url": "https://www.invenergy.com/news/invenergy-to-provide-meta-with-nearly-800-mw-supporting-data-center-operations"
         }
-      ]
+      ],
+      "summary": "Meta contracted for 791 megawatts of new solar and wind across Ohio, Arkansas and Texas, bringing its total with this developer to 1,800 megawatts."
     },
     {
       "name": "Microsoft and Brookfield renewable framework",
@@ -404,7 +419,8 @@
           "label": "Brookfield Renewable press release, 1 May 2024",
           "url": "https://bep.brookfield.com/press-releases/bep/brookfield-and-microsoft-collaborating-deliver-over-105-gw-new-renewable-power"
         }
-      ]
+      ],
+      "summary": "A five year framework under which Brookfield may deliver over 10.5 gigawatts of renewable power to Microsoft, with individual projects contracted underneath it."
     },
     {
       "name": "Amazon Web Services and Vistra, Comanche Peak",
@@ -430,7 +446,8 @@
         "disclosed": "20 year term with options to extend up to an additional 20 years, 1,200MW, Comanche Peak, delivery beginning Q4 2027 ramping to full capacity by 2032, counterparty described in the filing as a large investment grade company",
         "analystImputed": "counterparty identified as Amazon Web Services based on Vistra earnings call commentary, not stated in the filing",
         "notDisclosed": "contract value, price per MWh, extension option terms and strike"
-      }
+      },
+      "summary": "Amazon contracted for 1,200 megawatts from a Texas nuclear plant for 20 years, with options to extend for another 20."
     }
   ],
   "maDeals": [
@@ -450,7 +467,8 @@
           "label": "Dominion Energy investor relations, 2026",
           "url": "https://investors.dominionenergy.com/news/press-release-details/2026/NextEra-Energy-and-Dominion-Energy-file-to-combine-building-a-stronger-company-to-meet-growing-power-demand-across-four-of-Americas-fastest-growing-states-while-keeping-energy-affordable-and-reliable/default.aspx"
         }
-      ]
+      ],
+      "summary": "Two large United States utilities agreed to merge in an all stock deal, creating the biggest regulated utility in the world, with territory covering the densest data centre market in the country."
     },
     {
       "name": "AES take private",
@@ -470,7 +488,8 @@
           "label": "AES energy insights release",
           "url": "https://www.aes.com/energy-insights/consortium-led-global-infrastructure-partners-and-eqt-agrees-acquire-aes"
         }
-      ]
+      ],
+      "summary": "Infrastructure investors bought a listed power company outright for cash at a 40 percent premium, taking it off the stock exchange."
     },
     {
       "name": "Constellation / Calpine",
@@ -488,7 +507,8 @@
           "label": "Constellation press release, January 2026",
           "url": "https://www.constellationenergy.com/news/2026/01/constellation-completes-calpine-transaction-powering-americas-clean-energy-future.html"
         }
-      ]
+      ],
+      "summary": "The largest United States nuclear operator bought a large gas generator, creating the country's biggest power producer with both round the clock and flexible generation."
     },
     {
       "name": "Capital Power / Hummel & Rolling Hills",
@@ -505,7 +525,8 @@
           "label": "Capital Power media release",
           "url": "https://www.capitalpower.com/media/media_releases/capital-power-completes-acquisition-of-the-hummel-and-rolling-hills-facilities-in-pjm/"
         }
-      ]
+      ],
+      "summary": "A Canadian power company bought two American power plants for cash to enter the eastern United States market, closing in about two months."
     },
     {
       "name": "EQT / Copia Power",
@@ -523,7 +544,8 @@
           "label": "EQT Group news, 9 July 2026",
           "url": "https://eqtgroup.com/news/eqt-to-acquire-copia-power-a-leading-integrated-power-and-ai-infrastructure-platform-2026-07-09"
         }
-      ]
+      ],
+      "summary": "One private equity firm bought a renewable project developer from another, buying the ability to build power projects rather than the power itself."
     },
     {
       "name": "Aligned Data Centers acquisition",
@@ -550,7 +572,8 @@
           "label": "Aligned Data Centers press release, 21 July 2026",
           "url": "https://aligneddc.com/press-release/aip-mgx-and-blackrocks-gip-close-acquisition-of-aligned-data-centers/"
         }
-      ]
+      ],
+      "summary": "A consortium of sovereign wealth and infrastructure investors bought a data centre company outright for around $40 billion, the largest transaction in this database."
     }
   ],
   "financingDeals": [
@@ -560,7 +583,7 @@
       "announced": "Oct 2025",
       "tenant": "Meta (20% JV owner, lessee, operator)",
       "capitalPartners": "Blue Owl (80% equity, ~$7B cash), PIMCO (~$18B debt anchor), BlackRock ($3B+), Morgan Stanley (arranger)",
-      "structure": "Development JV via SPV; operating lease back to Meta (4 yr initial) + 16 yr capped residual value guarantee; A+ rated 144A bonds",
+      "structure": "Meta contributed an under construction data centre campus into a joint venture and sold 80 percent of the equity to Blue Owl for roughly $7 billion, receiving a $3 billion one time payout. The joint venture raised approximately $26 billion of debt through 144A bonds, anchored by PIMCO with BlackRock participating and Morgan Stanley arranging. Meta leases the campus back on an initial four year term and provides a sixteen year capped residual value guarantee. Because Meta holds only 20 percent, the debt does not consolidate onto Meta's balance sheet.",
       "debtB": 26,
       "equityB": 3,
       "totalB": 29,
@@ -584,13 +607,14 @@
           "label": "Meta investor relations, 2025",
           "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx"
         }
-      ]
+      ],
+      "summary": "Meta built a data centre campus in Louisiana, then sold 80 percent of it to an investment firm and leased it back, so the roughly $26 billion of debt funding the build sits outside Meta's own accounts."
     },
     {
       "name": "Hyperion 5GW expansion",
       "parties": "Meta",
       "announced": "Jul 2026",
-      "structure": "Scope revision; expansion financing undisclosed (same JV, second vehicle, or balance sheet)",
+      "structure": "The Louisiana campus scope was revised upward from 2 gigawatts to 5, taking estimated cost from roughly $27 billion to over $50 billion. The financing for the increase has not been disclosed, and could sit in the existing joint venture, a second vehicle, or on Meta's balance sheet.",
       "capacityGW": 5.0,
       "capexPerKW": 10000,
       "location": "Richland Parish, LA",
@@ -606,7 +630,8 @@
           "url": "https://finance.yahoo.com/technology/articles/meta-expands-louisiana-hyperion-data-121522809.html"
         }
       ],
-      "sourceNote": "Secondary reporting rather than a company release. If Meta issues a primary announcement covering the expansion, replace this link."
+      "sourceNote": "Secondary reporting rather than a company release. If Meta issues a primary announcement covering the expansion, replace this link.",
+      "summary": "Meta expanded the same Louisiana data centre campus from 2 gigawatts to 5, roughly doubling the cost to over $50 billion, with the funding for the increase not yet disclosed."
     },
     {
       "name": "Stargate Abilene",
@@ -614,7 +639,7 @@
       "announced": "2024 to 2025",
       "tenant": "Oracle (lessee under the Stargate program)",
       "capitalPartners": "Blue Owl Real Assets, Primary Digital Infrastructure, JPMorgan ($2.3B loan)",
-      "structure": "Development JV; developer Crusoe; campus leased to Oracle",
+      "structure": "A development joint venture with Crusoe as developer, backed by Blue Owl Real Assets and Primary Digital Infrastructure, built the campus and leased it to Oracle, which serves OpenAI under the Stargate programme. JPMorgan provided a $2.3 billion loan against the project.",
       "totalB": 15,
       "capacityGW": 1.2,
       "creditSupport": "Oracle lease (OpenAI Oracle contract expanded to $300B over 5 yrs)",
@@ -629,7 +654,8 @@
           "label": "OpenAI, five new Stargate sites",
           "url": "https://openai.com/index/five-new-stargate-sites/"
         }
-      ]
+      ],
+      "summary": "A developer built a large data centre campus in Texas and leased it to Oracle, which uses it to serve OpenAI, funded with a $2.3 billion loan from JPMorgan."
     },
     {
       "name": "Justified Data lease",
@@ -665,7 +691,8 @@
           "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
         }
       ],
-      "contractedRevenueB": 19
+      "contractedRevenueB": 19,
+      "summary": "A former bitcoin miner is building a data centre campus in Kentucky and has leased it to Anthropic for 20 years, generating roughly $19 billion of contracted rent."
     },
     {
       "name": "Nexus Hubbard campus financing",
@@ -698,7 +725,8 @@
         "Equity stake to guarantor",
         "Bridge financing"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "A new developer is building a data centre campus in Texas with its own gas power plant, leasing it to Anthropic, with Google guaranteeing the rent in exchange for a fifth of the project."
     },
     {
       "name": "SB Energy Ohio campus (Nvidia backstop)",
@@ -730,7 +758,8 @@
         "Sovereign capital",
         "Government land and power"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "A proposed 10 gigawatt data centre campus on United States federal land in Ohio, with OpenAI as tenant, Nvidia guaranteeing the lease, and Japan funding the power plant."
     },
     {
       "name": "Google TPU supply programme for Anthropic (umbrella)",
@@ -773,7 +802,8 @@
         "Residual value support",
         "Private credit"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "The umbrella arrangement through which Google supplies its own AI chips to Anthropic, splitting the risk three ways: Google guarantees the buildings, Broadcom finances the chips, and private credit firms own the hardware and lease it out."
     },
     {
       "name": "TeraWulf Lake Mariner construction bond",
@@ -804,7 +834,8 @@
           "label": "TeraWulf investor relations, Anthropic lease at Justified Data campus and Abernathy joint venture",
           "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
         }
-      ]
+      ],
+      "summary": "A guaranteed data centre lease was packaged into a bond that raised $3.2 billion to fund construction, with the guarantor paid in nearly free shares rather than a fee."
     },
     {
       "name": "Google backstopped miner conversions (Cipher, Hut 8 and others)",
@@ -829,7 +860,8 @@
         "Third party backstop",
         "Brownfield power"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "Former bitcoin mining companies converting their sites into AI data centres, able to raise construction debt because Google guarantees the leases."
     },
     {
       "name": "Broadcom TPU purchase commitments",
@@ -852,7 +884,8 @@
         "Vendor financing",
         "Purchase commitment"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "Broadcom has committed to buy $128 billion of AI chips from Google for deployment by Anthropic, with deliveries scheduled across 2027 and 2028."
     },
     {
       "name": "Meta El Paso residual value guarantee",
@@ -875,7 +908,8 @@
         "Residual value guarantee",
         "Self guaranteed"
       ],
-      "sources": []
+      "sources": [],
+      "summary": "A Meta data centre financing where Meta both rents the building and guarantees its future value, so unlike the Google structures no separate payment was needed for the guarantee."
     },
     {
       "name": "Microsoft and IREN GPU cloud agreement",
@@ -906,7 +940,8 @@
           "label": "IREN newsroom",
           "url": "https://iren.com/resources/blog/iren-signs97-billion-agreement-with-microsoft-to-deploy-ai-cloud-infrastructure"
         }
-      ]
+      ],
+      "summary": "Microsoft agreed to pay roughly $9.7 billion over five years to rent AI computing capacity from a data centre operator in Texas, which spent $5.8 billion on the chips to serve it."
     },
     {
       "name": "Microsoft and Nebius capacity agreement",
@@ -933,7 +968,8 @@
           "label": "Nebius newsroom, 8 September 2025",
           "url": "https://nebius.com/newsroom/nebius-announces-multi-billion-dollar-agreement-with-microsoft-for-ai-infrastructure"
         }
-      ]
+      ],
+      "summary": "Microsoft contracted to rent AI computing capacity from a data centre in New Jersey, and the operator says it will borrow against that contract on better terms because Microsoft is the counterparty."
     },
     {
       "name": "Stargate, Oracle and OpenAI capacity expansion",
@@ -964,7 +1000,8 @@
           "label": "OpenAI, five new Stargate sites",
           "url": "https://openai.com/index/five-new-stargate-sites/"
         }
-      ]
+      ],
+      "summary": "Oracle and OpenAI agreed to build 4.5 gigawatts of additional data centre capacity across five new United States sites, part of a programme exceeding $400 billion."
     },
     {
       "name": "TeraWulf convertible notes offering",
@@ -990,7 +1027,8 @@
           "disclosed": "$1.025 billion principal, zero percent coupon, convertible senior notes, offering closed",
           "notDisclosed": "conversion price and premium, maturity, use of proceeds detail, any capped call or hedge arrangements"
         }
-      }
+      },
+      "summary": "The same company that raised $3.2 billion cheaply with a Google guarantee raised $1.025 billion on its own name instead, using convertible notes that pay no interest."
     },
     {
       "name": "Abernathy joint venture, TeraWulf sale to Fluidstack",
@@ -1019,7 +1057,8 @@
           "disclosed": "entire 50.1 percent interest sold, investor group led by Fluidstack, joint venture established 2025, 168MW critical IT load campus in Abernathy Texas, approximately $450 million invested, sold at a premium to invested capital, Fluidstack continues to lead the project, joint venture accounting eliminated",
           "notDisclosed": "sale price, size of the premium, composition of the investor group, financing of the purchase, closing date"
         }
-      }
+      },
+      "summary": "A data centre operator bought out its landlord partner's majority stake in a Texas campus they were developing together, taking full control of the project."
     }
   ],
   "observations": {
