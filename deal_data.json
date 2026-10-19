@@ -3,7 +3,7 @@
     "title": "AI Infrastructure Deal Database",
     "subtitle": "Financing structures, credit support, and transactions behind the compute buildout",
     "maintainer": "Toluwalase Ayeni",
-    "asOf": "August 2026",
+    "asOf": "October 2026",
     "coverage": "Project and structured financings, credit support instruments, platform M&A, and the long term power contracts underpinning data centre capacity",
     "method": "Built from primary sources: company press releases, SEC filings, earnings calls, and reporting from Bloomberg, CNBC, DCD, and the Financial Times. Every figure carries a provenance tag: disclosed, computed from disclosed, analyst imputed, or not disclosed. Ratios are computed, never taken from secondary summaries.",
     "repository": "github.com/Tioluwaniiase/ai-infrastructure-deal-database",
@@ -13,8 +13,570 @@
   },
   "ppaDeals": [
     {
+      "name": "Amazon, AEP and X-energy, Indiana Xe-100 project",
+      "parties": "X-energy and AEP (Indiana Michigan Power) to Amazon",
+      "announced": "19 Oct 2026",
+      "type": "Joint development agreement with Amazon development funding",
+      "instrument": "Development funding and intent to contract, not a PPA",
+      "structure": "AEP and X-energy will assess a 960MW plant of 12 Xe-100 reactors at the former Breed Generating Station site in Sullivan County, Indiana. Amazon funds development and, if the project reaches a final investment decision, intends to sign a long term contract covering the plant's costs.",
+      "capacityMW": 960,
+      "unitMW": 80,
+      "market": "PJM / MISO border (Sullivan County, IN)",
+      "status": "Feasibility and development",
+      "powerRoute": "Grid connected (utility owned)",
+      "note": "The second project under Amazon and X-energy's plan for more than 5GW by 2039. Like the original X-energy record, this is development funding and an option, not contracted capacity: it should not be added to contracted nuclear MW.",
+      "provenance": {
+        "disclosed": "960MW, 12 x 80MW units, site, roles, Amazon's intent to contract at FID",
+        "notDisclosed": "term, cost, first power, permitting dates"
+      },
+      "sources": [
+        {
+          "label": "AEP release via PR Newswire, 19 Oct 2026",
+          "url": "https://www.prnewswire.com/news-releases/aep-partners-with-amazon-and-x-energy-to-explore-advanced-nuclear-energy-in-indiana-302912113.html"
+        },
+        {
+          "label": "Amazon, 19 Oct 2026",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+        }
+      ],
+      "summary": "Amazon is funding development of a 960 megawatt X-energy small reactor plant in Indiana with AEP, and intends to contract its output if it is built.",
+      "announcedDate": "2026-10-19",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Microsoft and NiSource GenCo, northwest Indiana",
+      "parties": "NiSource Generation Company to Microsoft",
+      "announced": "16 Oct 2026",
+      "type": "20 year utility large load agreement",
+      "instrument": "Executed large load agreement, with a battery tolling agreement",
+      "structure": "NiSource's GenCo will serve Microsoft for 20 years from 2028 with about 1.1GW of new generation, plus a 600MW battery tolling agreement with an affiliate of AGP Group. Microsoft fully funds the generation and transmission needed to serve its load.",
+      "capacityGW": 1.1,
+      "storageMW": 600,
+      "termYears": 20,
+      "market": "MISO (northwest Indiana)",
+      "firstPower": "2028",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "The GenCo structure ring fences data centre generation from regulated customers; NiSource raised projected customer savings to $1.75B from $1.4B. Same shape as the earlier NiSource deals with Alphabet and Amazon.",
+      "provenance": {
+        "disclosed": "about 1.1GW new generation, 600MW battery tolling, 20 years from 2028, Microsoft funds generation and transmission, customer savings $1.75B",
+        "notDisclosed": "capex, fuel mix, regulatory status, campus load"
+      },
+      "sources": [
+        {
+          "label": "NiSource release, 16 Oct 2026",
+          "url": "https://www.nisource.com/news/article/nisource-announces-long-term-agreement-with-microsoft-expected-to-increase-customer-savings-and-support-indiana-s-economic-growth"
+        }
+      ],
+      "summary": "Microsoft signed a 20 year agreement for about 1.1 gigawatts of new generation in Indiana, funding the generation and transmission itself.",
+      "announcedDate": "2026-10-16",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and AEP, Cheyenne Bloom fuel cells",
+      "parties": "Cheyenne Fuel Cell LLC (about 92% AEP, about 8% funds advised by Basalt) to Google",
+      "announced": "14 Oct 2026",
+      "type": "20 year PPA from solid oxide fuel cells",
+      "instrument": "Executed PPA",
+      "structure": "AEP will build 702MW of Bloom solid oxide fuel cells near Cheyenne, Wyoming, at about $4B, and sell the output to Google for 20 years.",
+      "capacityMW": 702,
+      "termYears": 20,
+      "capexB": 4.0,
+      "capexPerKW": 5698,
+      "capexFlag": "Computed: about $4B over 702MW, about $5,700 per kW.",
+      "market": "Wyoming (Cheyenne)",
+      "firstPower": "Construction from 2026; fully operational by end 2028",
+      "status": "Signed",
+      "powerRoute": "Not disclosed; likely part of the Black Hills private microgrid",
+      "note": "Fuel cells at about $5,700 per kW are more expensive per kW than the Calvert Cliffs and Constellation uprates, but faster to deploy. Bloom now sits behind both Oracle and Google.",
+      "provenance": {
+        "disclosed": "702MW, about $4B, 20 year term, ownership split, timing",
+        "computedFromDisclosed": "about $5,700 per kW",
+        "notDisclosed": "price, fuel supply, approvals, grid or behind the meter"
+      },
+      "sources": [
+        {
+          "label": "AEP release via PR Newswire, 14 Oct 2026",
+          "url": "https://www.prnewswire.com/news-releases/aep-advances-innovative-energy-solution-for-google-with-702mw-of-bloom-fuel-cells-302907658.html"
+        }
+      ],
+      "summary": "AEP will build 702 megawatts of fuel cells in Wyoming for about $4 billion and sell the power to Google for 20 years.",
+      "announcedDate": "2026-10-14",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and Constellation, PJM uprates and fleet supply",
+      "parties": "Constellation Energy to Google",
+      "announced": "6 Oct 2026",
+      "type": "20 year uprate PPA plus a 15 year fleet energy supply agreement, a technology alliance, and a framework for further resources",
+      "instrument": "Executed PPA for new uprate capacity, plus a supply agreement on existing output",
+      "structure": "A 20 year PPA for 890MW of uprates across 11 units at six Constellation sites in Illinois, Pennsylvania and New Jersey, plus a 15 year supply agreement for 2.7GW from Constellation's existing PJM fleet. Constellation invests more than $4.3B in the uprates. A five year technology alliance deploys Google's Gemini Enterprise at Constellation, and a framework covers other clean generation, storage and demand response.",
+      "capacityMW": 890,
+      "upliftMW": 890,
+      "termYears": 20,
+      "capexB": 4.3,
+      "capexPerKW": 4831,
+      "capexFlag": "Computed: $4.3B over 890MW of uprates, about $4,830 per kW. Constellation says 'more than $4.3B', so this is a floor.",
+      "market": "PJM (IL, PA, NJ)",
+      "firstPower": "First uprate by 2028; programme complete by 2032",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "Do not add the 2.7GW supply agreement to new capacity: it is existing fleet output. The 890MW of uprates is the new capacity. Bundles a commercial technology sale (Gemini Enterprise) with the power contract, the first record in the book where the offtaker sells its own product back to the generator.",
+      "provenance": {
+        "disclosed": "890MW uprates, 11 units at six sites, 20 year PPA, 2.7GW 15 year supply agreement, more than $4.3B investment, first uprate by 2028, five year technology alliance",
+        "computedFromDisclosed": "about $4,830 per kW of uprate capacity",
+        "notDisclosed": "price, MW by plant, regulatory approvals"
+      },
+      "sources": [
+        {
+          "label": "Constellation investor release, 6 Oct 2026",
+          "url": "https://investors.constellationenergy.com/news-releases/news-release-details/google-and-constellation-announce-landmark-agreement-bring-890"
+        },
+        {
+          "label": "Google blog, 6 Oct 2026",
+          "url": "https://blog.google/company-news/why-were-backing-americas-existing-nuclear-plants/"
+        }
+      ],
+      "summary": "Google contracted 890 megawatts of new nuclear uprate capacity for 20 years and 2.7 gigawatts of existing nuclear output for 15 years from Constellation's PJM fleet.",
+      "announcedDate": "2026-10-06",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and Black Hills, Cheyenne large load agreements",
+      "parties": "Black Hills Corp (Cheyenne Light) to Google",
+      "announced": "6 Oct 2026",
+      "type": "Utility large load agreements with a private microgrid",
+      "instrument": "Large Power Contract Services Agreement and Generation Facilities Agreement under the LPCS tariff",
+      "structure": "Black Hills will serve a Google data centre in Cheyenne through 2048 with a 2.7GW resource mix including reserves: up to 590MW of grid service, 564MW of new utility owned gas at Cheyenne Prairie, and about 2.1GW of third party Wyoming resources run through a private microgrid. Google bears all costs of serving the load and has made $399M of refundable advances for long lead equipment.",
+      "capacityGW": 2.7,
+      "termEnd": "2048",
+      "capexB": 1.8,
+      "capexFlag": "$1.8B is Black Hills' own spend in 2027 to 2029, not total system capex; third party resources are excluded.",
+      "market": "Wyoming (Cheyenne)",
+      "firstPower": "Late 2027, peak in 2030",
+      "status": "Agreements effective 30 Sep 2026; transmission approvals pending",
+      "powerRoute": "Hybrid: grid plus private microgrid",
+      "note": "Customer prepayment as credit support: $399M of refundable advances for equipment. Black Hills discloses about $150M of net income in 2030 and about $2.4B of unlevered free cash flow through 2048 from the arrangement. The AEP Bloom fuel cell PPA appears to sit inside the 2.1GW of third party resources (inferred, not confirmed).",
+      "provenance": {
+        "disclosed": "2.7GW resource mix, 590MW grid, 564MW new gas, about 2.1GW third party, term through 2048, $1.8B capex, $399M advances, about $150M 2030 net income, about $2.4B unlevered FCF",
+        "analystImputed": "the AEP fuel cells sit within the third party resources",
+        "notDisclosed": "microgrid fee rates, peak MW, third party terms, financing mix"
+      },
+      "sources": [
+        {
+          "label": "Black Hills 8-K, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001130464/000119312526415597/bkh-ex99_1.htm"
+        }
+      ],
+      "summary": "A Wyoming utility will serve a Google data centre through 2048 with 2.7 gigawatts of grid, new gas and third party power, with Google paying all costs and prepaying $399 million for equipment.",
+      "announcedDate": "2026-10-06",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Oracle and We Energies, Point Beach nuclear subscription",
+      "parties": "NextEra's Point Beach plant via We Energies to Oracle",
+      "announced": "2 Oct 2026",
+      "type": "Subscription to existing nuclear output with cost absorption",
+      "instrument": "Utility subscription, not a bilateral PPA",
+      "structure": "Oracle subscribes to part of Point Beach's output through We Energies for its Port Washington campus and absorbs about $300M of rising fuel costs that would otherwise fall on other customers. Reported as 10 to 20 percent of output over five years. We Energies agreed to buy about 86 percent of output for a further 20 years beyond 2033.",
+      "investmentM": 300,
+      "market": "MISO (Wisconsin)",
+      "status": "Pending Wisconsin PSC approval",
+      "powerRoute": "Grid connected",
+      "note": "The hyperscaler pays existing customers' cost increase as the price of access: ratepayer protection as the deal currency, the same theme as DTE's minimum bill and Oracle's El Paso Electric offer in New Mexico.",
+      "provenance": {
+        "disclosed": "about $300M of fuel cost absorption, Point Beach, Port Washington",
+        "analystImputed": "10 to 20% of output over five years (Wisconsin Watch)",
+        "notDisclosed": "MW, term, payment mechanics"
+      },
+      "sources": [
+        {
+          "label": "Oracle announcement, 2 Oct 2026",
+          "url": "https://www.oracle.com/news/announcement/oracle-announces-commitment-to-absorb-rising-point-beach-energy-costs-2026-10-02/"
+        }
+      ],
+      "summary": "Oracle will absorb about $300 million of rising fuel costs at a Wisconsin nuclear plant in exchange for a share of its output for a data centre.",
+      "announcedDate": "2026-10-02",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and DTE, Van Buren contracts approved",
+      "parties": "DTE Electric to Google",
+      "announced": "Mar 2026; approved 1 Oct 2026",
+      "type": "20 year supply agreement plus a clean capacity agreement",
+      "instrument": "Utility supply contract approved by the regulator (Michigan PSC case U-22058)",
+      "structure": "A 20 year Primary Supply Agreement and a Clean Capacity Accelerator Agreement under which Google pays for up to 1.6GW of renewables and 480MW of storage that DTE will own. Customer protections include 80 percent minimum billing demand, an early termination payment of at least 15 years of minimum charges, and credit and collateral requirements.",
+      "capacityGW": 1.6,
+      "storageMW": 480,
+      "termYears": 20,
+      "market": "MISO (Van Buren Township, MI)",
+      "firstPower": "Service from Dec 2027; full load by Dec 2028",
+      "status": "Approved by Michigan PSC 1 Oct 2026",
+      "powerRoute": "Grid connected",
+      "note": "The regulator's protections are the credit structure: minimum bills and a 15 year termination payment make the utility's new build financeable against Google's obligation, the same logic as a take or pay lease.",
+      "provenance": {
+        "disclosed": "20 year term, up to 1.6GW renewables and 480MW storage, 80% minimum billing, termination payment of at least 15 years of minimum charges, service dates",
+        "notDisclosed": "data centre load in MW, price"
+      },
+      "sources": [
+        {
+          "label": "Michigan PSC release, 1 Oct 2026",
+          "url": "https://www.michigan.gov/mpsc/commission/news-releases/2026/10/01/mpsc-approves-dte-electric-google-data-center-and-contracts-protects-customers-from-project-cost"
+        }
+      ],
+      "summary": "Michigan regulators approved DTE's 20 year contracts to serve a Google data centre, with Google paying for up to 1.6 gigawatts of new renewables and 480 megawatts of storage.",
+      "announcedDate": "2026-10-01",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Amazon and Constellation, Calvert Cliffs uprate",
+      "parties": "Constellation Energy to Amazon",
+      "announced": "30 Sep 2026",
+      "type": "20 year power purchase agreement funding a nuclear uprate, plus a retail supply agreement",
+      "instrument": "Executed PPA on an operating plant, with new uprate capacity",
+      "structure": "Amazon contracts 690MW from the 1.79GW Calvert Cliffs plant in Maryland for 20 years, of which about 190MW is new uprate capacity. Output stays on the PJM grid. A related retail agreement supports Amazon across Constellation's 13 state PJM footprint. The commitment underpins a further 20 year licence extension.",
+      "capacityMW": 690,
+      "upliftMW": 190,
+      "termYears": 20,
+      "capexB": 3.0,
+      "capexFlag": "Constellation describes 'more than $3 billion' of Maryland infrastructure investment; not a plant level uprate capex, so no per kW figure is computed.",
+      "market": "PJM (Lusby, MD)",
+      "firstPower": "New uprate capacity 2030 to 2032",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "Same instrument family as Meta Clinton: contracting an operating plant to secure relicensing, with an uprate that adds genuinely new megawatts. Amazon's second nuclear contract on an operating plant after Susquehanna, and grid connected from the start, consistent with regulators pushing co located load back onto the grid.",
+      "provenance": {
+        "disclosed": "690MW contracted, about 190MW uprate, 1.79GW plant, 20 year term, more than $3B Maryland investment, 2030 to 2032 uprate timing, retail supply across PJM",
+        "notDisclosed": "price, regulatory approvals, uprate capex split"
+      },
+      "sources": [
+        {
+          "label": "Constellation investor release, 30 Sep 2026",
+          "url": "https://investors.constellationenergy.com/news-releases/news-release-details/constellation-and-amazon-announce-20-year-power-purchase"
+        }
+      ],
+      "summary": "Amazon signed a 20 year contract for 690 megawatts from a Maryland nuclear plant, funding about 190 megawatts of new uprate capacity.",
+      "announcedDate": "2026-09-30",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and Georgia Power, NU-1 nuclear uprate tariff",
+      "parties": "Georgia Power to Google",
+      "announced": "21 Sep 2026",
+      "type": "Subscription to a new nuclear uprate tariff",
+      "instrument": "Tariff subscription with zero emission credits, not a PPA",
+      "structure": "Google subscribes to Georgia Power's new NU-1 tariff, receiving zero emission credits from about 96MW of uprates at Vogtle 1 and 2 and Hatch 1 and 2, with about $900M of projected benefits to other customers.",
+      "capacityMW": 96,
+      "market": "Georgia (Southern Company)",
+      "status": "Pending Georgia PSC approval (dockets 44280 and 56002)",
+      "powerRoute": "Grid connected",
+      "note": "Below the size threshold but logged for the structure: a regulated tariff product, not a bilateral PPA, which lets a utility sell nuclear attributes from uprates to a hyperscaler inside the rate base.",
+      "provenance": {
+        "disclosed": "about 96MW, Vogtle and Hatch units, about $900M projected customer benefits, docket numbers",
+        "notDisclosed": "Google's payments, credit price, split by plant, in service dates, term"
+      },
+      "sources": [
+        {
+          "label": "Georgia Power release via PR Newswire (Finviz copy)",
+          "url": "https://finviz.com/news/393996/georgia-power-agreement-with-google-to-provide-approximately-900-million-in-projected-benefits-for-customers-and-advance-nuclear-energy-in-georgia"
+        }
+      ],
+      "summary": "Google subscribed to a new Georgia Power tariff that sells the clean attributes of about 96 megawatts of nuclear uprates.",
+      "announcedDate": "2026-09-21",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "New Era Energy & Digital and Vistra, Odessa",
+      "parties": "Luminant ET Services (Vistra) to TCDC PowerCo (New Era Energy & Digital)",
+      "announced": "21 Sep 2026",
+      "type": "20 year gas PPA with an equity kicker",
+      "instrument": "Executed PPA plus development framework agreement",
+      "structure": "Vistra supplies about 200MW to 207MW for phase one of a data centre campus next to its 1,180MW Odessa gas plant, for 20 years with one year auto renewals. After first power Vistra receives a 5 percent non voting stake in the part of the project it powers, plus rights of first refusal and first offer on future projects. The site could scale to 1.4GW.",
+      "capacityMW": 207,
+      "termYears": 20,
+      "market": "ERCOT (Odessa, TX)",
+      "firstPower": "Q3 2027",
+      "status": "Signed",
+      "powerRoute": "Co located, adjacent gas plant",
+      "note": "Equity for power: the generator takes a stake in the data centre in exchange for supply, the mirror image of Meta taking 20 percent of Hyperion for credit support. No tenant named.",
+      "provenance": {
+        "disclosed": "200MW to 207MW phase one, 20 year term, 5% non voting stake, ROFR and ROFO, 1,180MW plant, 1.4GW potential, Q3 2027",
+        "notDisclosed": "price, credit support, tenant"
+      },
+      "sources": [
+        {
+          "label": "New Era Energy & Digital release via GlobeNewswire, 21 Sep 2026",
+          "url": "https://www.globenewswire.com/news-release/2026/09/21/3365358/0/en/new-era-energy-digital-secures-20-year-207-mw-ppa-with-vistra.html"
+        }
+      ],
+      "summary": "Vistra will supply about 207 megawatts of gas power to a Texas data centre campus for 20 years and take a 5 percent stake in the project.",
+      "announcedDate": "2026-09-21",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "AWS and PPC, Kozani data centre with renewable PPAs",
+      "parties": "PPC (Public Power Corporation, Greece) to AWS",
+      "announced": "17 Sep 2026",
+      "type": "Binding MoU for a leased data centre site with long term renewable PPAs",
+      "instrument": "MoU described as binding; commercial terms subject to definitive agreements",
+      "structure": "PPC will host an AWS data centre on the former Agios Dimitrios lignite site in Western Macedonia under a 15 year leasehold, supplying power under long term renewable PPAs: 300MW of incoming power to start, with up to 1GW to be explored.",
+      "capacityMW": 300,
+      "termYears": 15,
+      "market": "Greece (Western Macedonia)",
+      "status": "MoU signed; definitive agreements pending",
+      "powerRoute": "Grid connected, with part possibly behind the meter (as reported)",
+      "note": "A utility converting a retired coal site into a hyperscaler campus and selling it renewable power, the European version of the federal land siting in Ohio and Kentucky. Reported capex of close to EUR 1B per side is secondary.",
+      "provenance": {
+        "disclosed": "15 year leasehold, 300MW initial, up to 1GW to explore, renewable PPAs, site",
+        "notDisclosed": "capex, price, timing in primary release"
+      },
+      "sources": [
+        {
+          "label": "PPC announcement, 17 Sep 2026",
+          "url": "https://www.ppcgroup.com/media/nhdifumk/ppc-announcement-dc-17092026.pdf"
+        }
+      ],
+      "summary": "Greece's main utility signed a binding memorandum to host an AWS data centre on a former coal site and supply it 300 megawatts of renewable power.",
+      "announcedDate": "2026-09-17",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Oracle, Texas wind portfolio",
+      "parties": "RWE, ENGIE North America, Scout Clean Energy and Clearway to Oracle",
+      "announced": "17 Sep 2026",
+      "type": "Wind PPAs, largely virtual",
+      "instrument": "Executed PPAs",
+      "structure": "Oracle contracted more than 1.7GW across ten Texas wind projects to support its Abilene campus: 433MW virtual PPA from RWE's Panther Creek I to III, up to 568MW from ENGIE, a 300MW virtual PPA from Scout's Ranchero Wind, and an undisclosed share from Clearway.",
+      "capacityGW": 1.7,
+      "market": "ERCOT",
+      "status": "Signed",
+      "powerRoute": "Grid connected (virtual)",
+      "note": "Oracle's first large renewable procurement in the book, supporting Stargate Abilene. Clearway's share, about 400MW, is a subtraction, not disclosed. The Scout piece is secondary sourced.",
+      "provenance": {
+        "disclosed": "more than 1.7GW across ten projects, RWE 433MW, ENGIE up to 568MW",
+        "analystImputed": "Scout 300MW (secondary); Clearway about 400MW by subtraction",
+        "notDisclosed": "term, price, value"
+      },
+      "sources": [
+        {
+          "label": "RWE release, 17 Sep 2026",
+          "url": "https://www.rwe.com/en/press/rwe-americas/2026-09-17-rwe-signs-433-mw-virtual-power-purchase-agreement-with-oracle/"
+        },
+        {
+          "label": "Oracle announcement",
+          "url": "https://www.oracle.com/news/announcement/oracle-invests-in-more-than-1.7-gw-of-carbon-free-electricity-to-support-ai-growth-and-strengthen-the-texas-grid-2026-08-15/"
+        }
+      ],
+      "summary": "Oracle contracted more than 1.7 gigawatts of Texas wind across ten projects to support its Abilene data centre campus.",
+      "announcedDate": "2026-09-17",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Meta and Apex, Starling Solar",
+      "parties": "Apex Clean Energy to Meta",
+      "announced": "Sep 2026",
+      "type": "Solar PPA",
+      "instrument": "Executed PPA",
+      "structure": "Meta contracts 144MW from Apex's Starling Solar project in Gonzales County, Texas, taking all renewable energy credits.",
+      "capacityMW": 144,
+      "market": "ERCOT (Gonzales County, TX)",
+      "firstPower": "2027",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "SECONDARY SOURCED. Apex's seventh deal with Meta, about 1.2GW in total.",
+      "provenance": {
+        "disclosed": "144MW, all RECs to Meta, 2027 COD, about 1.2GW across seven Apex Meta deals (as reported)",
+        "notDisclosed": "term, price"
+      },
+      "sources": [
+        {
+          "label": "POWER Magazine, Sep 2026",
+          "url": "https://www.powermag.com/apex-clean-energy-signs-ppa-with-meta-for-solar-power-from-texas-project"
+        }
+      ],
+      "summary": "Meta contracted 144 megawatts of Texas solar from Apex, its seventh deal with the developer.",
+      "announcedDate": "2026-09-16",
+      "datePrecision": "month or year approximate"
+    },
+    {
+      "name": "Google and Fortum, Loviisa nuclear PPA",
+      "parties": "Fortum to Google",
+      "announced": "9 Sep 2026",
+      "type": "22 year nuclear PPA underpinning a life extension",
+      "instrument": "Executed PPA on an operating plant",
+      "structure": "Google buys up to half of the output of Fortum's Loviisa nuclear plant in Finland for 22 years, starting in 2028 and at full volume from 2030 to 2049, supporting the plant's life extension.",
+      "capacityMW": 507,
+      "termYears": 22,
+      "market": "Finland (Nord Pool)",
+      "firstPower": "2028; full volume 2030 to 2049",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "Google's first European nuclear PPA and the European version of the Clinton relicensing logic: the contract finances keeping an existing plant open. About 507MW is computed as half of Loviisa's capacity, not disclosed. Life extension capex of about EUR 700M is not yet decided.",
+      "provenance": {
+        "disclosed": "up to 50% of output, 22 years, 2028 start, full volume 2030 to 2049, life extension link",
+        "computedFromDisclosed": "about 507MW",
+        "notDisclosed": "price"
+      },
+      "sources": [
+        {
+          "label": "Fortum inside information release, 9 Sep 2026",
+          "url": "https://www.fortum.com/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement"
+        }
+      ],
+      "summary": "Google signed a 22 year contract for up to half the output of Finland's Loviisa nuclear plant, supporting its life extension.",
+      "announcedDate": "2026-09-09",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Google and Fervo, Cape Station geothermal",
+      "parties": "Cape Generating Station 6 LLC (Fervo Energy) to Google Energy LLC",
+      "announced": "1 Sep 2026",
+      "type": "15 year geothermal PPA with an expansion option",
+      "instrument": "Executed PPA plus option",
+      "structure": "Google contracts 396MW in four 99MW tranches for 15 years from Fervo's Cape Station in Utah, with an option for about 600MW more, taking the total to at least about 950MW. Fervo guarantees its subsidiary and Alphabet guarantees Google. If Fervo does not offer the expansion it must reimburse Google's payments for deemed delivered energy. The expansion may use a closed private generation system, in front of or behind the meter.",
+      "capacityMW": 396,
+      "optionMW": 600,
+      "termYears": 15,
+      "market": "Utah (Beaver County)",
+      "firstPower": "Target COD from Q3 2028; expansion no later than June 2030",
+      "status": "Signed; subject to Utah SB 132 approvals",
+      "powerRoute": "Grid connected, expansion possibly behind the meter",
+      "note": "Parent guarantees on both sides, which is rare in a PPA and worth tracking as credit support migrating into power contracts. Sits under a non binding framework for up to 3GW through 2033 signed in March 2026.",
+      "provenance": {
+        "disclosed": "396MW in four 99MW tranches, 15 year delivery term, expansion option of about 600MW, total not less than about 950MW, parent guarantees, reimbursement obligation, COD timing",
+        "notDisclosed": "price, utility involvement"
+      },
+      "sources": [
+        {
+          "label": "Fervo Energy 8-K, filed 1 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1853868/0001628280-26-059707.txt"
+        }
+      ],
+      "summary": "Google signed a 15 year contract for 396 megawatts of geothermal power from Fervo in Utah, with an option for about 600 megawatts more.",
+      "announcedDate": "2026-09-01",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Amazon, four Swedish wind PPAs",
+      "parties": "OX2, Eolus and Dala Vind (Fageråsen); Mirova (Saena portfolio: Boarp, Dållebo, Fågelås) to Amazon",
+      "announced": "28 Aug 2026",
+      "type": "Wind PPAs",
+      "instrument": "Executed PPAs",
+      "structure": "Amazon contracted 199MW across four Swedish wind farms: Fageråsen at 132MW under construction, and three operating Saena farms at 67MW combined.",
+      "capacityMW": 199,
+      "cumulativeMW": 985,
+      "market": "Sweden",
+      "firstPower": "Saena operating; Fageråsen 2028",
+      "status": "Signed",
+      "powerRoute": "Grid connected",
+      "note": "Takes Amazon's Swedish portfolio to about 985MW across nine projects. Logged for Amazon coverage; small relative to the nuclear and gas records.",
+      "provenance": {
+        "disclosed": "199MW across four farms, 132MW and 67MW split, about 985MW Swedish portfolio",
+        "notDisclosed": "term, price, physical or virtual"
+      },
+      "sources": [
+        {
+          "label": "Amazon Sverige press release, 28 Aug 2026",
+          "url": "https://www.mynewsdesk.com/se/amazonsverige/pressreleases/amazon-investerar-i-fyra-nya-vindkraftsprojekt-i-sverige-totala-portfoeljen-av-koldioxidfri-energi-kan-foersoerja-motsvarande-350-000-hushaall-3462370"
+        }
+      ],
+      "summary": "Amazon contracted 199 megawatts from four Swedish wind farms, taking its Swedish portfolio to about 985 megawatts.",
+      "announcedDate": "2026-08-28",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "OpenAI and Georgia Power, Effingham",
+      "parties": "Georgia Power to OpenAI",
+      "announced": "Jul 2026; approved 27 Aug 2026",
+      "type": "Large load supply contract",
+      "instrument": "Utility contract approved by PSC staff; terms redacted",
+      "structure": "Georgia Power will supply up to 3.2GW to a planned OpenAI data centre in Effingham County, plus up to 1GW of flexible demand response, with deliveries between 2028 and 2032.",
+      "capacityGW": 3.2,
+      "market": "Georgia (Effingham County)",
+      "firstPower": "2028 to 2032",
+      "status": "Approved 27 Aug 2026",
+      "powerRoute": "Grid connected",
+      "note": "SECONDARY SOURCED: the public contract is fully redacted. The largest single utility load contract in the book, and OpenAI contracting directly as the customer rather than through Oracle.",
+      "provenance": {
+        "disclosed": "up to 3.2GW, up to 1GW demand response, 2028 to 2032 deliveries (as reported)",
+        "notDisclosed": "term, generation type, price, credit support"
+      },
+      "sources": [
+        {
+          "label": "Atlanta Journal-Constitution, Aug 2026",
+          "url": "https://www.ajc.com/business/2026/08/georgia-power-deal-to-power-openai-data-center-near-savannah-is-approved/"
+        },
+        {
+          "label": "DCD, Aug 2026",
+          "url": "https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/"
+        }
+      ],
+      "summary": "Georgia regulators approved a contract for Georgia Power to supply up to 3.2 gigawatts to a planned OpenAI data centre near Savannah.",
+      "announcedDate": "2026-08-27",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Amazon, GW Ranch site in Pecos County",
+      "parties": "Pacifico Energy to Amazon",
+      "announced": "Aug 2026 (reported)",
+      "type": "Site acquisition with on site gas generation",
+      "instrument": "Site purchase; Amazon intends to buy generation from the site",
+      "structure": "Amazon acquired an 8,000 acre site in Pecos County, Texas, carrying a 7.65GW gas air permit for 35 turbines. Pacifico had also described 1.8GW of storage and 750MW of solar. Behind the meter first, moving to grid service once interconnected.",
+      "capacityGW": 7.65,
+      "market": "ERCOT (Pecos County, TX)",
+      "status": "Reported; Amazon statement confirms",
+      "powerRoute": "Behind the meter, then grid",
+      "note": "SECONDARY SOURCED. The 7.65GW is permitted gas capacity, not contracted capacity. The clearest Amazon example of behind the meter gas, moving the binding constraint from transmission to pipeline capacity.",
+      "provenance": {
+        "disclosed": "7.65GW air permit, 35 turbines, 8,000 acres (as reported)",
+        "notDisclosed": "PPA terms, term, value, purchase price"
+      },
+      "sources": [
+        {
+          "label": "DCD, Aug 2026",
+          "url": "https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/"
+        }
+      ],
+      "summary": "Amazon bought a Texas site permitted for up to 7.65 gigawatts of gas generation, to power a data centre behind the meter at first.",
+      "announcedDate": "2026-08-10",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "Brookfield and NextEra, Paducah DOE site",
+      "parties": "US Department of Energy site partnership: Brookfield (campus developer and operator), NextEra (generation), Big Rivers (wholesale) and Jackson Purchase Energy (retail)",
+      "announced": "29 Jul 2026",
+      "type": "Federal site partnership with dedicated new generation",
+      "instrument": "DOE selection under the American Energy Hubs initiative; power agreement pending Kentucky PSC approval",
+      "structure": "DOE selected Brookfield to develop and operate an AI campus of about 1.8GW at the former Paducah enrichment site in Kentucky, and NextEra to build and own 2GW of new gas generation, transmission upgrades and up to 2.6GW of batteries.",
+      "capacityGW": 1.8,
+      "storageMW": 2600,
+      "market": "Kentucky (MISO, Big Rivers)",
+      "firstPower": "Construction complete 2031; utility delivery up to 1.8GW by 2032",
+      "status": "Selected; power agreement pending Kentucky PSC approval; no tenant named",
+      "powerRoute": "Grid connected through local co ops, dedicated new gas",
+      "note": "The '$100 billion' attached to this deal is Brookfield's platform ambition (its $100B AI Infrastructure Program with Nvidia and the Kuwait Investment Authority), not campus capex, so capex is left blank. Second federal land site in the book after SB Energy Ohio.",
+      "provenance": {
+        "disclosed": "1.8GW campus, 2GW new gas, up to 2.6GW batteries, roles, 2031 completion, 'more than $100 billion privately funded investment' (DOE)",
+        "analystImputed": "the $100B is platform level, per Brookfield's programme release and CEO comments",
+        "notDisclosed": "campus capex, tenant, power price"
+      },
+      "sources": [
+        {
+          "label": "US Department of Energy release, Jul 2026",
+          "url": "https://www.energy.gov/node/4859686"
+        },
+        {
+          "label": "Brookfield $100B AI Infrastructure Program release, 19 Nov 2025",
+          "url": "https://www.nasdaq.com/press-release/brookfield-launches-100-billion-ai-infrastructure-program-2025-11-19"
+        }
+      ],
+      "summary": "The Department of Energy picked Brookfield to build a 1.8 gigawatt AI campus in Kentucky, with NextEra building 2 gigawatts of new gas generation for it.",
+      "announcedDate": "2026-07-29",
+      "datePrecision": "exact"
+    },
+    {
       "name": "Project Kilby",
-      "parties": "Chevron (Energy Forge One) \u2192 Microsoft",
+      "parties": "Chevron (Energy Forge One) → Microsoft",
       "announced": "Jun 2026",
       "type": "Behind the meter gas PPA",
       "structure": "Colocated / BYOP, off grid",
@@ -68,7 +630,7 @@
     },
     {
       "name": "Wichita & Mustang Creek",
-      "parties": "TotalEnergies \u2192 Google",
+      "parties": "TotalEnergies → Google",
       "announced": "Feb 2026",
       "type": "Grid connected solar PPA",
       "structure": "Grid PPA",
@@ -108,9 +670,9 @@
       "termYears": 20,
       "firstPower": "Purchases begin late 2026; full 2,609MW online by 2034",
       "market": "PJM",
-      "status": "Signed. Vistra beginning planning for subsequent licence extensions at all three plants.",
+      "status": "Signed. DOE conditional loan commitment of up to $4.2B (5 Oct 2026) for uprates and modernisation at Beaver Valley, Davis-Besse and Perry; not yet closed.",
       "powerRoute": "Grid connected",
-      "note": "The clearest example in the set of a corporate PPA financing new capacity rather than merely contracting existing output. More than 15 percent of contracted capacity is new. Plant capacities: Perry 1,268MW, Davis Besse 908MW, Beaver Valley 1,872MW. Current licences run to 2036, 2037, 2046 and 2047 respectively.",
+      "note": "The clearest example in the set of a corporate PPA financing new capacity rather than merely contracting existing output. More than 15 percent of contracted capacity is new. Plant capacities: Perry 1,268MW, Davis Besse 908MW, Beaver Valley 1,872MW. Current licences run to 2036, 2037, 2046 and 2047 respectively. Update Oct 2026: the DOE conditional commitment of up to $4.2B supports the same 433MW of uprates and 20 years of operation beyond current licences. The DOE release does not mention Meta, so the federal loan and the Meta PPA are separate layers financing the same new capacity.",
       "provenance": {
         "disclosed": "20 year term, 2,176MW operating plus 433MW uprates, purchases begin late 2026, full volume 2034, named plants and their capacities, current licence expiries, approximately 3,000 project related jobs over roughly nine years",
         "computedFromDisclosed": "total contracted capacity 2,609MW; uprates represent approximately 16.6 percent of contracted capacity",
@@ -120,6 +682,10 @@
         {
           "label": "Vistra investor relations, 9 January 2026",
           "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid"
+        },
+        {
+          "label": "US Department of Energy release, 5 Oct 2026",
+          "url": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower"
         }
       ],
       "summary": "Meta contracted for 20 years with three nuclear plants in Ohio and Pennsylvania, including funding upgrades that add new capacity rather than just buying existing output.",
@@ -128,7 +694,7 @@
     },
     {
       "name": "Clearway portfolio",
-      "parties": "Clearway (50% TotalEnergies) \u2192 Google",
+      "parties": "Clearway (50% TotalEnergies) → Google",
       "announced": "Jan 2026",
       "type": "Grid connected wind and solar PPA",
       "structure": "Grid PPA, multi market",
@@ -219,7 +785,7 @@
       "firstPower": "Targeted fully operational by the first quarter of 2029",
       "status": "Pending NRC and other regulatory approvals to restart.",
       "powerRoute": "Grid connected",
-      "note": "Note the explicit ratepayer protection language: the PPA enables the investment to restart the plant and covers the costs of production, and Iowa energy customers bear no costs associated with the power Google purchases. That clause is becoming standard in these agreements and is a direct response to the political backlash against data centre load. NextEra now has nearly 3GW of projects executed with Google.",
+      "note": "Note the explicit ratepayer protection language: the PPA enables the investment to restart the plant and covers the costs of production, and Iowa energy customers bear no costs associated with the power Google purchases. That clause is becoming standard in these agreements and is a direct response to the political backlash against data centre load. NextEra now has nearly 3GW of projects executed with Google. Update Sep 2026: the DOE closed a loan of up to $1.9B for the 615MW restart on 8 Sep 2026.",
       "provenance": {
         "disclosed": "25 year term, 615MW, Duane Arnold, targeted operational Q1 2029, CIPCO purchasing remaining output on the same terms, NextEra acquiring the 30 percent minority to reach 100 percent ownership, approximately 400 direct full time operations jobs, more than $9B economic benefit to Iowa",
         "notDisclosed": "contract value, price per MWh, restart capital cost, acquisition price for the 30 percent interest"
@@ -228,6 +794,10 @@
         {
           "label": "NextEra Energy investor relations, 27 October 2025",
           "url": "https://www.investor.nexteraenergy.com/news-and-events/news-releases/2025/10-27-2025-203948689"
+        },
+        {
+          "label": "US Department of Energy release, 8 Sep 2026",
+          "url": "https://www.energy.gov/index.php/articles/energy-department-closes-19-billion-loan-restart-duane-arnold-nuclear-plant"
         }
       ],
       "summary": "Google agreed to buy power for 25 years from an Iowa nuclear plant that shut in 2020, funding its restart, with Iowa customers explicitly bearing none of the cost.",
@@ -247,11 +817,15 @@
       "market": "ERCOT",
       "status": "Signed",
       "powerRoute": "Grid connected",
-      "note": "Found during source verification and not previously recorded. Note that Vistra's 10-Q describes the counterparty only as a large, investment grade company; the identification as Amazon Web Services comes from Vistra's subsequent earnings call commentary rather than the filing itself. The extension option of up to a further 20 years is unusual and gives the buyer a 40 year potential horizon.",
+      "note": "Found during source verification and not previously recorded. Note that Vistra's 10-Q describes the counterparty only as a large, investment grade company; the identification as Amazon Web Services comes from Vistra's subsequent earnings call commentary rather than the filing itself. The extension option of up to a further 20 years is unusual and gives the buyer a 40 year potential horizon. Update Oct 2026: the DOE's $4.2B Vistra commitment includes an option to finance possible future uprates at Comanche Peak.",
       "sources": [
         {
           "label": "Vistra Form 10-Q, quarter ended 30 September 2025",
           "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281925000094/vistra-20250930.htm"
+        },
+        {
+          "label": "US Department of Energy release, 5 Oct 2026",
+          "url": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower"
         }
       ],
       "provenance": {
@@ -388,7 +962,7 @@
       "targetYear": 2039,
       "status": "Investment closed. Initial project in early development.",
       "powerRoute": "Grid connected",
-      "note": "IMPORTANT CORRECTION. The round is approximately $500 million, not the $700 million widely reported, and Amazon anchored it rather than providing all of it. The more than 5GW figure is a joint deployment target by 2039, not contracted capacity. Only the 320MW Energy Northwest project has a named counterparty and site. Each Xe-100 unit is 80MW, with plants configured from 320MW to 960MW. Moelis acted as exclusive financial adviser and placement agent to X-energy.",
+      "note": "IMPORTANT CORRECTION. The round is approximately $500 million, not the $700 million widely reported, and Amazon anchored it rather than providing all of it. The more than 5GW figure is a joint deployment target by 2039, not contracted capacity. Only the 320MW Energy Northwest project has a named counterparty and site. Each Xe-100 unit is 80MW, with plants configured from 320MW to 960MW. Moelis acted as exclusive financial adviser and placement agent to X-energy. Update Oct 2026: a second project, a 960MW Xe-100 plant in Indiana with AEP, is logged separately.",
       "provenance": {
         "disclosed": "approximately $500mm Series C-1 anchored by Amazon, named co investors, more than 5GW target by 2039, initial 320MW four unit project with Energy Northwest, option to 12 units and 960MW, 80MW per unit, Moelis as adviser",
         "notDisclosed": "Amazon's share of the round, PPA prices, project level investment amounts, timeline beyond the initial project"
@@ -487,6 +1061,59 @@
   ],
   "maDeals": [
     {
+      "name": "Brookfield / American Real Estate Partners (PowerHouse) minority stake",
+      "announced": "14 Sep 2026",
+      "acquirer": "Brookfield affiliates",
+      "target": "American Real Estate Partners, parent of PowerHouse Data Centers",
+      "structure": "Minority stake; percentage and price not disclosed",
+      "buyerType": "Infrastructure fund",
+      "capacityGW": 10.0,
+      "status": "Announced; closing expected Q4 2026",
+      "rationale": "Pair a powered land and development platform with Brookfield's energy and infrastructure capital.",
+      "note": "SECONDARY SOURCED; value not disclosed, so it may sit below the $1B threshold. About 10GW across 140 data centres underway or planned is the platform's pipeline, not operating capacity.",
+      "provenance": {
+        "disclosed": "minority stake, nearly 10GW across 140 data centres in nine markets (as reported)",
+        "notDisclosed": "price, stake size, seller"
+      },
+      "sources": [
+        {
+          "label": "Data Center Frontier, Sep 2026",
+          "url": "https://www.datacenterfrontier.com/hyperscale/article/55409162/brookfields-arep-deal-extends-the-ai-infrastructure-stack-to-powered-land"
+        }
+      ],
+      "summary": "Brookfield agreed to buy a minority stake in the parent of PowerHouse Data Centers, a developer with about 10 gigawatts in its pipeline.",
+      "announcedDate": "2026-09-14",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "SK Horizon minority stakes (KKR, IMM and Stonebridge)",
+      "announced": "27 Aug 2026",
+      "acquirer": "KKR (29%); IMM Investment and Stonebridge Capital consortium (20%)",
+      "target": "SK Horizon, the AI data centre business being spun out of SK Broadband",
+      "seller": "SK Telecom (retains 51%)",
+      "structure": "Cash equity of KRW 3.08tn in total across sale of existing shares and new shares; SK Telecom keeps control",
+      "equityValueB": 2.23,
+      "buyerType": "Private equity and infrastructure funds",
+      "capacityGW": 0.318,
+      "status": "Announced; spin off targeted Q1 2027 pending approvals",
+      "rationale": "Bring in outside capital for Korean AI data centre expansion while the parent keeps control.",
+      "note": "equityValueB is the investment amount (about $2.23B), not the value of 100 percent; the implied 100 percent equity value of about KRW 6.3tn is computed, not disclosed. 318MW operating across eight sites plus 178MW under construction.",
+      "provenance": {
+        "disclosed": "KRW 3.08tn, ownership split, 318MW across eight sites, Ulsan 103MW and Guro 75MW under construction",
+        "computedFromDisclosed": "implied 100% equity about KRW 6.3tn",
+        "notDisclosed": "enterprise value"
+      },
+      "sources": [
+        {
+          "label": "SK Telecom release, 27 Aug 2026",
+          "url": "https://news.sktelecom.com/en/3290"
+        }
+      ],
+      "summary": "KKR and a Korean consortium are investing about $2.2 billion for 49 percent of SK Telecom's AI data centre business.",
+      "announcedDate": "2026-08-27",
+      "datePrecision": "exact"
+    },
+    {
       "name": "Aligned Data Centers acquisition",
       "announced": "Completed 21 July 2026",
       "acquirer": "Artificial Intelligence Infrastructure Partnership (AIP), MGX, and BlackRock's Global Infrastructure Partners (GIP)",
@@ -545,13 +1172,21 @@
       "structure": "All stock, fixed exchange ratio (0.8138 NEE per D share)",
       "equityValueB": 67,
       "buyerType": "Strategic (utility)",
-      "status": "Announced, definitive agreement",
+      "status": "Shareholders of both companies approved 3 Sep 2026; regulatory approvals pending",
       "expectedClose": "2027 (12 to 18 months)",
       "rationale": "Creates the world's largest regulated utility; pro forma NEE ~74.5% / Dominion ~25.5%.",
       "sources": [
         {
           "label": "Dominion Energy investor relations, 2026",
           "url": "https://investors.dominionenergy.com/news/press-release-details/2026/NextEra-Energy-and-Dominion-Energy-file-to-combine-building-a-stronger-company-to-meet-growing-power-demand-across-four-of-Americas-fastest-growing-states-while-keeping-energy-affordable-and-reliable/default.aspx"
+        },
+        {
+          "label": "Dominion 8-K, shareholder vote, 3 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000715957/000119312526381919/d323818d8k.htm"
+        },
+        {
+          "label": "NextEra 8-K, shareholder vote, 3 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000753308/000075330826000071/nee-20260903.htm"
         }
       ],
       "summary": "Two large United States utilities agreed to merge in an all stock deal, creating the biggest regulated utility in the world, with territory covering the densest data centre market in the country.",
@@ -568,18 +1203,112 @@
       "enterpriseValueB": 33.4,
       "premium": 0.403,
       "buyerType": "Financial (infra funds)",
-      "status": "Stockholders approved Jun 2026 (97%+)",
+      "status": "Stockholders approved Jun 2026; CFIUS approved 27 Aug, Ohio PUC 17 Sep, EU 16 Oct 2026; FERC review pending",
       "expectedClose": "Late 2026 / early 2027",
       "rationale": "Infra capital buying a listed IPP with data center contracted renewables at a 40% premium.",
       "sources": [
         {
           "label": "AES energy insights release",
           "url": "https://www.aes.com/energy-insights/consortium-led-global-infrastructure-partners-and-eqt-agrees-acquire-aes"
+        },
+        {
+          "label": "AES 8-K, Ohio PUC approval, Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000874761/000114036126036994/ef20082051_8k.htm"
         }
       ],
       "summary": "Infrastructure investors bought a listed power company outright for cash at a 40 percent premium, taking it off the stock exchange.",
       "announcedDate": "2026-03-01",
+      "datePrecision": "month or year approximate",
+      "note": "On 28 Sep 2026 five members of Congress asked FERC to reject the deal. CFIUS and EU approvals are from secondary summaries of the filings."
+    },
+    {
+      "name": "KKR and Singtel, full ownership of STT GDC",
+      "announced": "2 Feb 2026; closed 2 Sep 2026",
+      "acquirer": "KKR led consortium with Singtel (75% KKR, 25% Singtel after closing)",
+      "target": "ST Telemedia Global Data Centres (remaining 82%)",
+      "seller": "ST Telemedia",
+      "structure": "Cash, S$6.6B (about $5.1B) for the 82 percent stake",
+      "equityValueB": 5.1,
+      "enterpriseValueB": 10.9,
+      "buyerType": "Private equity with a strategic co investor",
+      "capacityGW": 2.3,
+      "status": "Closed 2 Sep 2026",
+      "rationale": "Full control of a pan Asian AI ready data centre platform.",
+      "note": "Enterprise value of S$13.8B includes debt and committed capex. 780MW operational at closing against 2.3GW design capacity.",
+      "provenance": {
+        "disclosed": "S$6.6B for 82%, S$13.8B EV, 2.3GW design capacity, 780MW operating, closing date",
+        "notDisclosed": "US dollar figures are conversions"
+      },
+      "sources": [
+        {
+          "label": "KKR and Singtel announcement, 2 Feb 2026",
+          "url": "https://www.businesswire.com/news/home/20260202441025/en/KKR-Led-Consortium-with-Singtel-Group-to-Fully-Acquire-ST-Telemedia-Global-Data-Centres-at-S%2413.8-Billion-Enterprise-Value"
+        },
+        {
+          "label": "STT GDC completion release (SGX), 2 Sep 2026",
+          "url": "https://links.sgx.com/1.0.0/corporate-announcements/5O3YZ3WG6WI9P74W/903261_STT%20GDC%20marks%20new%20chapter_20260902.pdf"
+        }
+      ],
+      "summary": "A KKR led consortium with Singtel completed its purchase of the rest of an Asian data centre operator at about $10.9 billion enterprise value.",
+      "announcedDate": "2026-02-02",
+      "datePrecision": "exact"
+    },
+    {
+      "name": "CPP Investments and Equinix, atNorth",
+      "announced": "Feb 2026; closed 2 Sep 2026",
+      "acquirer": "CPP Investments (about 51%) and Equinix (about 34%)",
+      "target": "atNorth",
+      "seller": "Partners Group (reinvested for about 10%)",
+      "structure": "Cash, CPP about $1.3B and Equinix about $895M, backed by a $4.1B lending package",
+      "enterpriseValueB": 4.0,
+      "buyerType": "Pension investor with a strategic co investor",
+      "status": "Closed 2 Sep 2026",
+      "rationale": "Nordic expansion; Equinix enters Iceland, Denmark and Norway.",
+      "note": "The $4B is the stated transaction value; enterprise and equity value are not separately disclosed.",
+      "provenance": {
+        "disclosed": "$4B transaction value, stakes and amounts, $4.1B lending package, closing",
+        "notDisclosed": "separate EV and equity value, capacity in primary release"
+      },
+      "sources": [
+        {
+          "label": "atNorth completion release, 2 Sep 2026",
+          "url": "https://www.atnorth.com/news/cpp-investments-and-equinix-complete-atnorth-acquisition-to-support-growth-of-leading-nordic-data-center-platform/"
+        }
+      ],
+      "summary": "CPP Investments and Equinix completed a $4 billion acquisition of the Nordic data centre operator atNorth.",
+      "announcedDate": "2026-02-01",
       "datePrecision": "month or year approximate"
+    },
+    {
+      "name": "SoftBank / DigitalBridge take private",
+      "announced": "29 Dec 2025; closed 30 Sep 2026",
+      "acquirer": "SoftBank Group",
+      "target": "DigitalBridge (asset manager, about $108B AUM; portfolio includes Vantage, Switch, DataBank, Yondr, AtlasEdge)",
+      "seller": "Public shareholders",
+      "structure": "Cash, $16.00 per share",
+      "equityValueB": 3.1,
+      "enterpriseValueB": 4.0,
+      "buyerType": "Strategic",
+      "status": "Closed 30 Sep 2026 after FERC, CFIUS and other approvals",
+      "rationale": "SoftBank buys the manager of a large digital infrastructure portfolio to secure compute, connectivity and power.",
+      "note": "SoftBank buys the general partner, not the portfolio companies: control of about $108B of digital infrastructure for about $4B of enterprise value. Adds to SoftBank's position across SB Energy Ohio and Stargate.",
+      "provenance": {
+        "disclosed": "$16.00 per share, about $4.0B EV, about $3.1B equity, $108B AUM, approvals, closing",
+        "notDisclosed": "fund level economics"
+      },
+      "sources": [
+        {
+          "label": "DigitalBridge announcement, 8-K exhibit",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679688/000110465925124541/tm2534410d1_ex99-1.htm"
+        },
+        {
+          "label": "SoftBank completion release, 30 Sep 2026",
+          "url": "https://group.softbank/en/news/press/20260930"
+        }
+      ],
+      "summary": "SoftBank completed its $4 billion take private of DigitalBridge, the manager behind Vantage, Switch and other data centre platforms.",
+      "announcedDate": "2025-12-29",
+      "datePrecision": "exact"
     },
     {
       "name": "Capital Power / Hummel & Rolling Hills",
@@ -621,9 +1350,400 @@
       "summary": "The largest United States nuclear operator bought a large gas generator, creating the country's biggest power producer with both round the clock and flexible generation.",
       "announcedDate": "2025-01-01",
       "datePrecision": "month or year approximate"
+    },
+    {
+      "name": "Blackstone / AirTrunk",
+      "announced": "4 Sep 2024; closed 23 Dec 2024",
+      "acquirer": "Blackstone funds, with CPP Investments as co investor",
+      "target": "AirTrunk (88% stake)",
+      "seller": "Macquarie Asset Management and PSP Investments; founder sold part of his stake",
+      "structure": "Cash, 88 percent stake",
+      "enterpriseValueB": 16.0,
+      "buyerType": "Private equity and infrastructure fund",
+      "capacityGW": 0.8,
+      "status": "Closed 23 Dec 2024",
+      "rationale": "Largest data centre platform deal in Asia Pacific at the time, betting on hyperscale demand in Australia and Asia.",
+      "note": "Enterprise value disclosed only as 'over A$24 billion', including committed capex; the US dollar figure is a conversion (about $16B), not disclosed. 800MW committed to customers plus land for over 1GW more.",
+      "provenance": {
+        "disclosed": "over A$24B EV, 88% stake, over 800MW committed, over 1GW of growth land, closing date",
+        "computedFromDisclosed": "about $16B at the 2024 exchange rate",
+        "notDisclosed": "equity value"
+      },
+      "sources": [
+        {
+          "label": "Blackstone release, 4 Sep 2024",
+          "url": "https://www.blackstone.com/news/press/blackstone-announces-agreement-to-acquire-airtrunk-in-a-a24b-transaction/"
+        },
+        {
+          "label": "Macquarie release, Sep 2024",
+          "url": "https://www.macquarie.com/about/news/2024/macquarie-asset-management-and-psp-investments-announce-sale-of-airtrunk.html"
+        }
+      ],
+      "summary": "Blackstone bought AirTrunk, the Australian data centre operator, at an enterprise value of over A$24 billion.",
+      "announcedDate": "2024-09-04",
+      "datePrecision": "exact"
     }
   ],
   "financingDeals": [
+    {
+      "name": "Volta Tydal loan package (Anthropic offtake)",
+      "summary": "Volta raised about $5 billion of leveraged loans in Norway against a six year Anthropic compute contract, priced above 11 percent.",
+      "parties": "Volta Tydal Holdings (borrower); JPMorgan and Goldman Sachs (joint lead arrangers); Apollo ($1.5B anchor order); Anthropic (offtaker); Bitdeer (data centre lessor)",
+      "announced": "9 Oct 2026",
+      "announcedDate": "2026-10-09",
+      "datePrecision": "exact",
+      "tenant": "Anthropic (about $10B, six years, 133MW, as reported)",
+      "structure": "A $1.3B first lien term loan C and a $3.712B GPU term loan funding about 36,000 Nvidia GPUs, with proceeds also cash collateralising a letter of credit for the data centre lease. Pricing steps down if Anthropic obtains an investment grade rating.",
+      "totalB": 5.0,
+      "debtB": 5.0,
+      "capacityGW": 0.133,
+      "pricingData": {
+        "spread": "SOFR + 650bp",
+        "oid": 95,
+        "yield": "above 11%",
+        "tenorYears": 6,
+        "callProtection": "non call 2, then 102, then par",
+        "rating": "unrated"
+      },
+      "creditSupport": "Anthropic contract; no guarantee",
+      "creditSupportType": [
+        "Contract secured debt",
+        "Private credit"
+      ],
+      "location": "Tydal, Norway",
+      "status": "Priced; closing not confirmed",
+      "note": "SECONDARY SOURCED. The rating step down is new: the spread is explicitly a price on the offtaker's credit, and it falls if Anthropic becomes investment grade. At above 11 percent, this is the widest point on the book's cost of capital curve.",
+      "detail": {
+        "provenance": {
+          "disclosed": "tranche sizes, pricing, OID, call terms, rating step down (as reported by PitchBook and Semafor)",
+          "notDisclosed": "final allocations, take up of the GPU tranche"
+        }
+      },
+      "sources": [
+        {
+          "label": "Semafor, 13 Oct 2026",
+          "url": "https://www.semafor.com/article/10/13/2026/voltas-5-billion-debt-deal-is-a-pulse-check-on-the-ai-financing-boom"
+        }
+      ],
+      "sourceNote": "PitchBook LCD, Oct 2026."
+    },
+    {
+      "name": "Amazon Nvidia chip SPV sale and leaseback",
+      "summary": "Amazon is reported to be moving about $8 billion of Nvidia chips into a special purpose vehicle that would borrow against them and lease them back to Amazon.",
+      "parties": "Amazon / SPV / outside debt and equity investors",
+      "announced": "Oct 2026 (in talks)",
+      "announcedDate": "2026-10-02",
+      "datePrecision": "exact",
+      "structure": "Amazon would sell about $8B of Grace Blackwell chips, deployed in more than 12 US data centres across five states, to an SPV and lease them back. The SPV would issue debt targeting an investment grade rating and sell outside investors up to 10 percent of the equity.",
+      "totalB": 8.0,
+      "creditSupport": "Amazon lease; residual value support not disclosed",
+      "creditSupportType": [
+        "Long term lease",
+        "Private credit"
+      ],
+      "status": "In talks; Amazon and Nvidia have not commented",
+      "note": "SECONDARY SOURCED (Financial Times, Bloomberg). The hyperscaler version of chip financing: the same separation of silicon from buildings seen at the neoclouds, but with an investment grade lessee, so the question becomes how the SPV handles residual value on three to five year chips.",
+      "detail": {
+        "provenance": {
+          "disclosed": "about $8B of chips, more than 12 data centres in five states, IG target, up to 10% outside equity (as reported)",
+          "notDisclosed": "banks, investors, lease term, residual value support, pricing"
+        }
+      },
+      "sources": [],
+      "sourceNote": "Financial Times and Bloomberg, 2 Oct 2026 (subscription reporting)."
+    },
+    {
+      "name": "CoreWeave 2.875% convertible notes due 2033",
+      "summary": "CoreWeave sold $3.7 billion of unsecured convertible notes at 2.875 percent.",
+      "parties": "CoreWeave (issuer)",
+      "announced": "18 Sep 2026",
+      "announcedDate": "2026-09-18",
+      "datePrecision": "exact",
+      "structure": "Upsized from $3.0B to $3.7B, with an option for $0.5B more. Conversion price $97.85, a 22.5 percent premium, with a capped call to $199.70 costing about $498.8M. Matures 1 Apr 2033.",
+      "totalB": 3.7,
+      "debtB": 3.7,
+      "pricingData": {
+        "coupon": "2.875%",
+        "maturity": "2033-04-01",
+        "conversionPremium": "22.5%"
+      },
+      "creditSupport": "None: unsecured corporate debt",
+      "creditSupportType": [
+        "Convertible notes",
+        "Corporate level financing"
+      ],
+      "status": "Priced; settled 22 Sep 2026",
+      "note": "Corporate level funding alongside the asset level DDTLs: equity linked paper is CoreWeave's cheapest coupon but the most dilutive layer.",
+      "detail": {
+        "provenance": {
+          "disclosed": "size, coupon, maturity, conversion price and premium, capped call terms and cost",
+          "notDisclosed": "exercise of the $0.5B option"
+        }
+      },
+      "sources": [
+        {
+          "label": "CoreWeave investor release, 18 Sep 2026",
+          "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Prices-Upsized-3-7-Billion-Convertible-Senior-Notes-Offering/default.aspx"
+        }
+      ]
+    },
+    {
+      "name": "CleanSpark Sandersville project bond (Meta lease)",
+      "summary": "CleanSpark raised $2.28 billion of secured bonds to build a Georgia data centre leased to Meta for 20 years, with Meta guaranteeing the rent.",
+      "parties": "CSDC Finance I, LLC (issuer); CleanSpark (completion guarantee); Anviran LLC, a Meta subsidiary (tenant); Meta (rent guarantee); Morgan Stanley (lead, as reported)",
+      "announced": "17 Sep 2026",
+      "announcedDate": "2026-09-17",
+      "datePrecision": "exact",
+      "tenant": "Meta (via Anviran LLC)",
+      "structure": "A 144A and Reg S project bond secured by first liens on the project and a pledge of the issuer's equity, funding the rest of the build, repaying CleanSpark's equity contributions and funding debt service reserves. The tenant is on a 20 year triple net lease worth about $6.6B with 3 percent escalators.",
+      "totalB": 2.276,
+      "debtB": 2.276,
+      "capacityGW": 0.175,
+      "leaseTermYears": 20,
+      "pricingData": {
+        "coupon": "7.875%",
+        "maturity": "2031",
+        "issuePrice": 98.5,
+        "yield": "about 8.25%",
+        "orders": "about $10B (as reported)"
+      },
+      "creditSupport": "Meta parent guarantee of rent and operating expenses; CleanSpark completion guarantee",
+      "creditSupportType": [
+        "Parent guarantee",
+        "Long term lease",
+        "Construction bond"
+      ],
+      "location": "Sandersville, GA",
+      "status": "Closed 25 Sep 2026; rent from Q4 2027",
+      "note": "Meta guaranteed, yet priced at about 8.25 percent and rated junk: the guarantee covers rent, not construction, so bondholders still price completion risk on a bitcoin miner turned developer. About $13B per GW of lease value.",
+      "detail": {
+        "provenance": {
+          "disclosed": "$2.276B, 7.875% due 2031 at 98.5, security package, use of proceeds, completion guarantee (primary)",
+          "analystImputed": "Meta identity and guarantee, $6.6B lease, 175MW, 3% escalators from investor materials as reported by Bloomberg and The Deep Dive",
+          "notDisclosed": "rating detail, rent per MW in primary documents"
+        }
+      },
+      "sources": [
+        {
+          "label": "CleanSpark pricing release",
+          "url": "https://s21.q4cdn.com/978676932/files/doc_news/CleanSpark-Inc--Announces-Pricing-of-2-276-Billion-of-Senior-Secured-Notes-2026.pdf"
+        },
+        {
+          "label": "CleanSpark 8-K Exhibit 99.2",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526393758/clsk-ex99_2.htm"
+        },
+        {
+          "label": "CleanSpark closing release",
+          "url": "https://www.prnewswire.com/news-releases/cleanspark-inc-announces-closing-of-2-276-billion-of-senior-secured-notes-302890605.html"
+        }
+      ]
+    },
+    {
+      "name": "Amazon and Generac, backup power supply and warrant",
+      "summary": "Amazon agreed to buy up to $8 billion of backup generators from Generac and received warrants over Generac shares that vest as it pays.",
+      "parties": "Generac to Amazon",
+      "announced": "16 Sep 2026",
+      "announcedDate": "2026-09-16",
+      "datePrecision": "exact",
+      "structure": "A long term supply agreement for data centre backup generators paired with a warrant. Amazon can receive up to 1,693,745 Generac shares at $200.9266, of which 307,954 vested at signing and the rest vest in tranches as Amazon pays, up to $8B in total. Initial deliveries are about $2.4B in 2027 and 2028. The warrant runs to 16 Sep 2033.",
+      "totalB": 8.0,
+      "creditSupport": "Not a credit instrument: the customer is paid in equity for volume commitment.",
+      "creditSupportType": [
+        "Warrants to customer",
+        "Purchase commitment"
+      ],
+      "status": "Signed",
+      "note": "Amazon's standard supplier warrant model, now applied to power equipment. Compare with Google's penny warrants in TeraWulf, which compensate credit support rather than volume: here the equity pays for demand. Check the strike against Generac's share price on 16 Sep for the warrant leverage comparison.",
+      "detail": {
+        "provenance": {
+          "disclosed": "up to $8B of payments, warrant share count and strike, vesting at signing, about $2.4B initial deliveries, 2033 expiry",
+          "notDisclosed": "MW, term of supply agreement, redacted exhibit terms"
+        }
+      },
+      "sources": [
+        {
+          "label": "Generac 8-K, 16 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926030550/gnrc20260915_8k.htm"
+        }
+      ]
+    },
+    {
+      "name": "Nscale Ward County and Madison DDTLs, and Nvidia convertible notes",
+      "summary": "Nscale raised about $3.05 billion of investment grade construction and equipment loans and $3.1 billion of convertible notes, $1 billion of them from Nvidia.",
+      "parties": "Nscale Ward County Borrower SPV and Madison borrower; lenders not named; Nvidia and other investors in the convertible notes",
+      "announced": "31 Aug and 15 Sep 2026",
+      "announcedDate": "2026-08-31",
+      "datePrecision": "exact",
+      "tenant": "Microsoft at Ward County (as reported)",
+      "structure": "Two senior secured delayed draw term loans drawn on milestones: up to $1.85B in Ward County, Texas for GB300 and VR200 systems supporting about 275MW, and up to $1.2B for a 40MW site in Madison, North Carolina. Separately, convertible loan notes of at least $3.1B, $2.1B from unsecured investors and $1.0B from Nvidia, converting automatically at the IPO.",
+      "totalB": 6.15,
+      "debtB": 3.05,
+      "capacityGW": 0.315,
+      "creditSupport": "Microsoft offtake at Ward County (as reported); both loans rated investment grade",
+      "creditSupportType": [
+        "Contract secured debt",
+        "Vendor financing",
+        "Convertible notes"
+      ],
+      "location": "Ward County, TX and Madison, NC",
+      "status": "Loans closed; Nvidia notes expected to close around 16 Nov 2026",
+      "note": "Vendor financing at the equity layer: Nvidia funds a third of the convertible round of a customer that buys its chips. A reported Nvidia guarantee of up to $860.3M of Nscale's rent to Ionic Digital is unverified.",
+      "detail": {
+        "provenance": {
+          "disclosed": "loan sizes, capacities, investment grade ratings, convertible note split and conversion mechanics (S-1 and company release)",
+          "analystImputed": "Microsoft as Ward County offtaker",
+          "notDisclosed": "pricing, lenders"
+        }
+      },
+      "sources": [
+        {
+          "label": "Nscale financing release via Light Reading",
+          "url": "https://www.lightreading.com/ai-machine-learning/nscale-closes-approximately-3b-in-financing-for-ward-county-texas-and-madison-north-carolina-ai-deployments"
+        },
+        {
+          "label": "Nscale S-1, filed 18 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002110365/000119312526395475/ck0002110365-20260918.htm"
+        }
+      ]
+    },
+    {
+      "name": "Lambda and Anthropic, Nvidia leased capacity",
+      "summary": "Anthropic is reported to have signed a roughly $35 billion, six year deal for Lambda capacity in a Texas data centre leased by Nvidia.",
+      "parties": "Lambda to Anthropic; Nvidia as lessee of the data centre",
+      "announced": "Aug 2026 (reported)",
+      "announcedDate": "2026-08-31",
+      "datePrecision": "month or year approximate",
+      "tenant": "Anthropic",
+      "structure": "About 350MW in Nueces County, Texas over about six years. Nvidia holds the data centre lease and Lambda sells the capacity on to Anthropic.",
+      "totalB": 35.0,
+      "capacityGW": 0.35,
+      "creditSupport": "Nvidia as intermediate lessee",
+      "creditSupportType": [
+        "Vendor supported financing",
+        "Long term contract"
+      ],
+      "location": "Nueces County, TX",
+      "status": "Reported; not confirmed by the parties",
+      "note": "SECONDARY SOURCED (Wall Street Journal). Nvidia as the tenant of record in the middle of the stack is a new position for the vendor: it takes the lease credit risk that the developer would otherwise price.",
+      "detail": {
+        "provenance": {
+          "disclosed": "about $35B, about 350MW, about six years, Nvidia lease (as reported)",
+          "notDisclosed": "everything in primary form"
+        }
+      },
+      "sources": [
+        {
+          "label": "DCD, Aug 2026",
+          "url": "https://www.datacenterdynamics.com/en/news/anthropic-signs-35bn-cloud-agreement-with-lambda-report/"
+        }
+      ]
+    },
+    {
+      "name": "IREN Mackenzie GPU financing (Blue Owl)",
+      "summary": "IREN borrowed $2.4 billion against Nvidia GPUs at 9 percent, about 300 basis points more than its Microsoft backed financing.",
+      "parties": "IREN (borrower); Blue Owl managed funds (lead); PIMCO (adviser to certain investors)",
+      "announced": "28 Aug 2026",
+      "announcedDate": "2026-08-28",
+      "datePrecision": "exact",
+      "structure": "Asset backed financing for Nvidia Blackwell Ultra GPUs, drawn in tranches, funding 90 percent of GPU capex: a $1.2B senior secured term loan and $1.2B of senior secured notes.",
+      "totalB": 2.4,
+      "debtB": 2.4,
+      "pricingData": {
+        "rate": "9.0% fixed",
+        "comparison": "IREN's Microsoft anchored financing, June 2026, 6.0% blended: about 300bp tighter"
+      },
+      "creditSupport": "GPU collateral only; customers not investment grade and not named",
+      "creditSupportType": [
+        "Private credit",
+        "Contract secured debt"
+      ],
+      "location": "Mackenzie, British Columbia",
+      "status": "Closed",
+      "note": "Second like for like test of the wrapper in the window: the same borrower pays about 300bp more without Microsoft behind the contract. A 90 percent advance rate on chips is aggressive given three to five year useful lives.",
+      "detail": {
+        "provenance": {
+          "disclosed": "$2.4B, split, 9.0%, 90% of GPU capex, Blue Owl lead, PIMCO role",
+          "computedFromDisclosed": "about 300bp versus the 6.0% Microsoft anchored deal",
+          "notDisclosed": "tenor, customers"
+        }
+      },
+      "sources": [
+        {
+          "label": "Blue Owl release",
+          "url": "https://www.blueowl.com/news/blue-owl-managed-funds-lead-24-billion-ai-factory-financing-iren"
+        },
+        {
+          "label": "IREN FY26 results",
+          "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results"
+        }
+      ]
+    },
+    {
+      "name": "Nscale and Anthropic GPU services agreements",
+      "summary": "Anthropic agreed to buy up to about $44.6 billion of dedicated Nvidia capacity from Nscale, disclosed in Nscale's IPO filing.",
+      "parties": "Nscale to Anthropic",
+      "announced": "25 Aug 2026 (agreement); disclosed 18 Sep 2026 (S-1)",
+      "announcedDate": "2026-08-25",
+      "datePrecision": "exact",
+      "tenant": "Anthropic",
+      "structure": "Dedicated Nvidia Vera Rubin NVL72 infrastructure at Nscale's Monarch Compute Campus in West Virginia, which Nscale will fund through external financing and operating cash flow. Reported as six years and about 460MW; Microsoft has separately signed for 1.35GW at the site.",
+      "totalB": 44.6,
+      "capacityGW": 0.46,
+      "creditSupport": "Anthropic contract; credit support not disclosed",
+      "creditSupportType": [
+        "Long term contract"
+      ],
+      "location": "West Virginia",
+      "status": "Signed",
+      "note": "The largest single neocloud contract in the book, and with an unrated lab. About $97B per GW of contract value, which is mostly chips: compare with about $13B per GW of lease value at Sandersville. Nscale's S-1 shows $103.4B of total contract backlog.",
+      "detail": {
+        "provenance": {
+          "disclosed": "up to about $44.6B, Vera Rubin NVL72, Monarch campus, funding approach, $103.4B backlog (S-1)",
+          "computedFromDisclosed": "about $97B per GW using the reported 460MW",
+          "analystImputed": "six years and about 460MW from Bloomberg",
+          "notDisclosed": "pricing, credit support"
+        }
+      },
+      "sources": [
+        {
+          "label": "Nscale S-1, filed 18 Sep 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002110365/000119312526395475/ck0002110365-20260918.htm"
+        }
+      ]
+    },
+    {
+      "name": "QTS Project Odyssey project bonds (Microsoft linked)",
+      "summary": "Blackstone's QTS sold about $3.9 billion of investment grade project bonds for a Georgia data centre venture reportedly leased to Microsoft.",
+      "parties": "Two special purpose subsidiaries of QualityTech (QTS, Blackstone); Citi, Goldman Sachs, JPMorgan and Morgan Stanley",
+      "announced": "18 Aug 2026",
+      "announcedDate": "2026-08-18",
+      "datePrecision": "exact",
+      "tenant": "Microsoft (reported; Microsoft declined to comment)",
+      "structure": "Five year investment grade project bonds for a Georgia data centre venture, upsized by about $1B, with proceeds including distributions to QualityTech.",
+      "totalB": 3.9,
+      "debtB": 3.9,
+      "pricingData": {
+        "tenorYears": 5,
+        "ratings": "Baa3 (Moody's), BBB- (Fitch) expected",
+        "yield": "about 7.23% (as reported)"
+      },
+      "creditSupport": "Microsoft lease (not confirmed)",
+      "creditSupportType": [
+        "Long term lease",
+        "Project finance"
+      ],
+      "location": "Georgia",
+      "status": "Priced",
+      "note": "SECONDARY SOURCED. Investment grade rated at about 7.2 percent, a useful anchor against the 8.25 percent CleanSpark yield: both rest on hyperscaler leases, the gap is developer and completion risk.",
+      "detail": {
+        "provenance": {
+          "disclosed": "about $3.9B, five year, expected ratings, yield (as reported)",
+          "notDisclosed": "lease terms, capacity, tenant confirmation"
+        }
+      },
+      "sources": [],
+      "sourceNote": "Bloomberg via secondary outlets and GlobalCapital, Aug 2026."
+    },
     {
       "name": "Nvidia AI factory financing platforms",
       "summary": "Nvidia and six of the world's largest infrastructure investors are creating repeatable financing platforms designed to mobilise over $500 billion of third party capital for AI data centres, with Nvidia offering limited residual value support on some projects.",
@@ -660,6 +1780,47 @@
         }
       },
       "sourceNote": "Primary statement by the company chief executive, published on X rather than as a corporate release. Replace with the Nvidia newsroom URL if an equivalent post exists there."
+    },
+    {
+      "name": "CoreWeave DDTL 5.5",
+      "summary": "CoreWeave borrowed $2.6 billion against GPUs serving a mix of customers, at a spread more than twice that of its investment grade facility.",
+      "parties": "CoreWeave Financing DDTL V-V, LLC; JPMorgan and MUFG as joint lead arrangers",
+      "announced": "10 Aug 2026",
+      "announcedDate": "2026-08-10",
+      "datePrecision": "exact",
+      "structure": "A delayed draw term loan of about five years, secured by computing infrastructure dedicated to customer contracts, with Nvidia GPUs as the key collateral. The tenor exceeds the roughly three year average customer contract, and CoreWeave may re lease capacity when contracts end.",
+      "totalB": 2.6,
+      "debtB": 2.6,
+      "pricingData": {
+        "spread": "SOFR + 550bp",
+        "tenorYears": 5,
+        "ratings": "Ba2 (Moody's), BB+ (Fitch)",
+        "comparison": "DDTL 4.0, $8.5B investment grade, SOFR + 225bp: about 325bp tighter"
+      },
+      "creditSupport": "Contracted cash flows from mixed customers plus GPU collateral; no investment grade offtaker",
+      "creditSupportType": [
+        "Contract secured debt",
+        "Private credit"
+      ],
+      "status": "Closed",
+      "note": "The cleanest like for like test of the wrapper: same borrower, same collateral type, about 325bp wider without an investment grade offtaker. Tenor longer than the contracts means CoreWeave carries re leasing risk.",
+      "detail": {
+        "provenance": {
+          "disclosed": "$2.6B, SOFR + 550, about five years, ratings, oversubscribed, collateral description; DDTL 4.0 at SOFR + 225",
+          "computedFromDisclosed": "about 325bp spread difference",
+          "notDisclosed": "capacity, customers, location"
+        }
+      },
+      "sources": [
+        {
+          "label": "CoreWeave investor release, 10 Aug 2026",
+          "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx"
+        },
+        {
+          "label": "CoreWeave Q1 2026 earnings, 8-K exhibit",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000220/coreweave1q26earningspress.htm"
+        }
+      ]
     },
     {
       "name": "Google TPU supply programme for Anthropic (umbrella)",
@@ -842,37 +2003,107 @@
     {
       "name": "SB Energy Ohio campus (Nvidia backstop)",
       "parties": "SB Energy (SoftBank) / OpenAI / Nvidia / US Department of Commerce / Government of Japan",
-      "announced": "Jul 2026 (in talks; terms not finalized and deal could fall apart)",
+      "announced": "Jul 2026 (talks); RVGs executed Aug 2026",
       "tenant": "OpenAI (advanced talks to lease; would be OpenAI's first project as direct tenant). Anthropic, Microsoft and Google also spoke to Commerce about the site.",
       "capitalPartners": "Nvidia (guarantor of a series of financing vehicles, ~$250B; separately has invested $30B in OpenAI and is discussing financing chip purchases of up to ~$350B), Government of Japan ($33B into the power project under a tariff trade deal), SoftBank (SB Energy owner and major OpenAI investor), US federal government (land and power allocation)",
       "structure": "Nvidia guarantees a series of financing vehicles covering the data center lease and the buildout debt, expressly NOT the chips. Chips financed separately in a parallel Nvidia arrangement. Power project funded by Japan at $33B on federal land, operated by SB Energy for a fee paid by the US government. Power sales revenue split between Japan and the US until Japan recoups its $33B, after which the US government receives 90% of revenue.",
       "totalB": 500,
       "capacityGW": 10.0,
       "capexFlag": "not computable: the >$500B figure explicitly includes chips, so it cannot be divided by capacity to produce a facility capex per kW comparable to other records.",
-      "creditSupport": "Nvidia guarantee of roughly $250B across financing vehicles, covering lease and buildout debt but not chips. Rationale as reported: OpenAI has no investment grade credit rating as an unprofitable private company, so the guarantee lets the developer raise debt on better terms than OpenAI could alone.",
+      "creditSupport": "Nvidia residual value guarantees to SB Energy as lessor, covering leases for about 4.25GW of IT load leased to an OpenAI affiliate, with cumulative payments capped at $105B and optional support for about 3.8GW more. Nvidia pays any shortfall if OpenAI defaults, and OpenAI must reimburse Nvidia. The guarantees end at 20 years, or earlier if OpenAI reaches a satisfactory credit rating.",
       "powerSource": "Natural gas power project on federal land, funded by Japan, operated by SB Energy. Power allocation controlled by the US government with Commerce Secretary Howard Lutnick involved in deciding who receives it.",
       "location": "Southern Ohio, decommissioned uranium enrichment site roughly 50 miles south of Columbus (federal land)",
-      "status": "In talks; groundbreaking held March 2026 with Lutnick, Son and Energy Secretary Chris Wright. First phase expected 2028 at roughly 800 MW.",
+      "status": "Nvidia residual value guarantees executed per Nvidia 8-K dated 17 Aug 2026; ready for service from 2028",
       "note": "INDUSTRY TERM CAPTURED: the arrangement is described within the industry as a credit wrapper, where investment grade technology companies use their balance sheets to help smaller companies borrow for infrastructure. Same family as Google backstopping Anthropic at TeraWulf, Hut8, and Nexus Hubbard, described as partly intended to increase sales of Google's own TPUs. Federal land is being used expressly to avoid the permitting and local opposition snarling projects elsewhere. Nvidia's own annual report warns that data center funding arrangements could lower near term cash flows and increase exposure to customer credit risk, so the guarantor has disclosed the risk it is taking.",
       "detail": {
-        "guaranteeB": 250,
+        "guaranteeB": 105,
         "provenance": {
-          "disclosed": "~$250B Nvidia guarantee, 10 GW capacity, >$500B total including chips, $33B Japanese investment, revenue split terms, 90% US share post recoupment, first phase 2028 at ~800MW, federal land siting, Nvidia $30B invested in OpenAI, ~$350B potential chip financing, OpenAI compute spend projection raised to ~$750B through 2030 from ~$600B, Nvidia ~$5T market value, Nvidia annual report risk disclosure on customer credit exposure",
+          "disclosed": "~$250B Nvidia guarantee, 10 GW capacity, >$500B total including chips, $33B Japanese investment, revenue split terms, 90% US share post recoupment, first phase 2028 at ~800MW, federal land siting, Nvidia $30B invested in OpenAI, ~$350B potential chip financing, OpenAI compute spend projection raised to ~$750B through 2030 from ~$600B, Nvidia ~$5T market value, Nvidia annual report risk disclosure on customer credit exposure; Nvidia 8-K: RVGs covering about 4.25GW, $105B cumulative cap, optional about 3.8GW more, OpenAI reimbursement obligation, 20 year term or earlier on a satisfactory credit rating",
           "computedFromDisclosed": "first phase is 8% of ultimate capacity (800MW of 10GW); guarantee is roughly half of stated total project cost",
           "analystImputed": "the Japan recoupment then 90/10 split is structurally a preferred return followed by a sponsor promote, applied to a sovereign rather than a fund",
           "notDisclosed": "lease term, rent per MW year, the identity and structure of the financing vehicles, guarantee triggers and caps, chip financing terms, what SB Energy's operating fee is"
         },
-        "watchItems": "1) Whether the deal closes at all, since terms are not finalized. 2) The three layer circularity: Nvidia equity in OpenAI, Nvidia guarantee of OpenAI's lease, Nvidia financing of OpenAI's chip purchases. 3) Government allocated power as a new siting channel: who else receives allocations and on what basis. 4) Whether federal land siting becomes a repeatable permitting bypass."
+        "watchItems": "1) Whether the deal closes at all, since terms are not finalized. 2) The three layer circularity: Nvidia equity in OpenAI, Nvidia guarantee of OpenAI's lease, Nvidia financing of OpenAI's chip purchases. 3) Government allocated power as a new siting channel: who else receives allocations and on what basis. 4) Whether federal land siting becomes a repeatable permitting bypass.",
+        "guaranteeNote": "CORRECTION Aug 2026: the earlier ~$250B figure came from reporting during talks. Nvidia's 8-K caps cumulative payments at $105B for about 4.25GW, with optional support for about 3.8GW more."
       },
       "creditSupportType": [
-        "Third party guarantee",
+        "Government land and power",
+        "Residual value guarantee",
         "Sovereign capital",
-        "Government land and power"
+        "Third party guarantee"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "label": "Nvidia 8-K dated 17 Aug 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000069/nvda-20260817.htm"
+        }
+      ],
       "summary": "A proposed 10 gigawatt data centre campus on United States federal land in Ohio, with OpenAI as tenant, Nvidia guaranteeing the lease, and Japan funding the power plant.",
       "announcedDate": "2026-07-01",
       "datePrecision": "month or year approximate"
+    },
+    {
+      "name": "CoreWeave and Anthropic agreement",
+      "summary": "Anthropic signed a multi year compute agreement with CoreWeave, with financial terms not disclosed.",
+      "parties": "CoreWeave to Anthropic",
+      "announced": "10 Apr 2026",
+      "announcedDate": "2026-04-10",
+      "datePrecision": "exact",
+      "tenant": "Anthropic",
+      "structure": "A multi year agreement for capacity to develop and deploy Claude, starting with a phased rollout and compute online later in 2026.",
+      "creditSupport": "Anthropic contract; terms not disclosed",
+      "creditSupportType": [
+        "Long term contract"
+      ],
+      "status": "Signed",
+      "note": "No value disclosed, so no totalB. Logged for counterparty coverage: CoreWeave's book now spans Microsoft, Meta, OpenAI and Anthropic.",
+      "detail": {
+        "provenance": {
+          "disclosed": "multi year term, phased rollout, compute online later in 2026",
+          "notDisclosed": "value, term, capacity, sites"
+        }
+      },
+      "sources": [
+        {
+          "label": "CoreWeave release, 10 Apr 2026",
+          "url": "https://coreweave.com/news/coreweave-announces-multi-year-agreement-with-anthropic"
+        }
+      ]
+    },
+    {
+      "name": "CoreWeave and Meta capacity agreements",
+      "summary": "Meta committed about $21 billion to CoreWeave for AI capacity through 2032, on top of a $14.2 billion agreement from 2025.",
+      "parties": "CoreWeave to Meta",
+      "announced": "30 Sep 2025 and 9 Apr 2026",
+      "announcedDate": "2026-04-09",
+      "datePrecision": "exact",
+      "tenant": "Meta",
+      "structure": "A September 2025 order form of about $14.2B through 14 Dec 2031, with an option to extend through 2032, and a new order form signed 31 Mar 2026 committing about $21B for capacity through 20 Dec 2032, including early Vera Rubin deployments across several locations. The $21B includes an exercised option under an earlier order form.",
+      "totalB": 21.0,
+      "contractedRevenueB": 35.2,
+      "creditSupport": "Meta's own investment grade credit; no third party wrapper",
+      "creditSupportType": [
+        "Long term contract"
+      ],
+      "status": "Signed",
+      "note": "The clean contrast to the wrapped Fluidstack and Nexus deals: CoreWeave finances against Meta's credit directly, so no guarantor is needed. Caution on the combined figure: CoreWeave does not state $35B; $14.2B plus $21B may double count because the $21B includes an exercised option under a prior order form.",
+      "detail": {
+        "provenance": {
+          "disclosed": "about $14.2B through Dec 2031, about $21B through Dec 2032, signing and announcement dates, Vera Rubin deployments",
+          "computedFromDisclosed": "about $35.2B combined, possibly overstated by the exercised option",
+          "notDisclosed": "capacity in MW, sites, pricing"
+        }
+      },
+      "sources": [
+        {
+          "label": "CoreWeave 8-K, 31 Mar 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000154/crwv-20260331.htm"
+        },
+        {
+          "label": "CoreWeave 8-K, 25 Sep 2025",
+          "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000050/crwv-20250925.htm"
+        }
+      ]
     },
     {
       "name": "Broadcom TPU purchase commitments",
@@ -1087,6 +2318,36 @@
       "datePrecision": "month or year approximate"
     },
     {
+      "name": "CoreWeave and OpenAI capacity agreements",
+      "summary": "OpenAI signed three agreements with CoreWeave in 2025 worth up to about $22.4 billion in total.",
+      "parties": "CoreWeave to OpenAI",
+      "announced": "Mar, May and Sep 2025",
+      "announcedDate": "2025-09-25",
+      "datePrecision": "exact",
+      "tenant": "OpenAI",
+      "structure": "Three tranches: up to $11.9B in March 2025, up to $4B in May 2025 and up to $6.5B on 25 Sep 2025.",
+      "totalB": 22.4,
+      "creditSupport": "OpenAI contract; OpenAI is unrated and unprofitable",
+      "creditSupportType": [
+        "Long term contract"
+      ],
+      "status": "Signed",
+      "note": "The unrated counterparty counterpart to the Meta agreements: same provider, very different credit behind the contract. 'Up to' figures, so these are ceilings, not committed spend.",
+      "detail": {
+        "provenance": {
+          "disclosed": "$11.9B, $4B and $6.5B tranches, all 'up to'",
+          "computedFromDisclosed": "about $22.4B total",
+          "notDisclosed": "term, capacity, pricing"
+        }
+      },
+      "sources": [
+        {
+          "label": "CoreWeave release, Sep 2025",
+          "url": "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b"
+        }
+      ]
+    },
+    {
       "name": "Microsoft and Nebius capacity agreement",
       "parties": "Nebius Group N.V. (Nasdaq: NBIS) to Microsoft",
       "announced": "8 September 2025",
@@ -1152,7 +2413,7 @@
     },
     {
       "name": "Stargate Abilene",
-      "parties": "Crusoe JV \u2192 Oracle (serving OpenAI)",
+      "parties": "Crusoe JV → Oracle (serving OpenAI)",
       "announced": "2024 to 2025",
       "tenant": "Oracle (lessee under the Stargate program)",
       "capitalPartners": "Blue Owl Real Assets, Primary Digital Infrastructure, JPMorgan ($2.3B loan)",
@@ -1188,10 +2449,14 @@
       "Behind the meter generation is displacing utility interconnection as the power route, moving the binding constraint from transmission to gas pipeline capacity.",
       "Sovereign capital has entered the stack, with recoupment then residual split structures that mirror preferred return and promote waterfalls.",
       "Headline nuclear capacity is mostly not contracted capacity. Across the announced hyperscaler nuclear deals, roughly 5.1GW sits under executed PPAs on operating or restarting plants, while the remainder of the widely cited 9.8GW consists of development funding, options, and in one case a memorandum of understanding. Instrument classification changes the number by nearly half.",
-      "Regulators are pushing co located load back onto the grid. The Amazon and Talen arrangement at Susquehanna converted from a behind the meter co located structure to a front of the meter supply arrangement with the utility responsible for transmission, which is the clearest signal available that bypassing grid cost allocation is not a settled strategy."
+      "Regulators are pushing co located load back onto the grid. The Amazon and Talen arrangement at Susquehanna converted from a behind the meter co located structure to a front of the meter supply arrangement with the utility responsible for transmission, which is the clearest signal available that bypassing grid cost allocation is not a settled strategy.",
+      "The wrapper spread widened rather than compressed in August 2026. Two same borrower comparisons price the investment grade offtaker at roughly 300 to 325 basis points: CoreWeave at SOFR plus 225 against SOFR plus 550, and IREN at 6.0 percent against 9.0 percent. A lab offtaker without a rating sits wider still, with Volta's Anthropic backed loan above 11 percent and a coupon step down if Anthropic becomes investment grade.",
+      "A hyperscaler guarantee does not remove completion risk. CleanSpark's Meta guaranteed Sandersville bond priced at about 8.25 percent and junk ratings, against about 7.2 percent for QTS's investment grade Project Odyssey bonds, both on hyperscaler leases. The difference is the developer.",
+      "Google's power strategy shifted in Q3 2026 to utility structures: Black Hills' private microgrid and $399M of equipment prepayments, DTE's minimum bill and termination payment, a Georgia Power tariff product and Constellation uprates. The customer pays for the build directly, and the protection sits in the tariff rather than the PPA.",
+      "Equity is now paid for power and demand as well as credit: Vistra takes 5 percent of a Texas data centre for supply, and Amazon takes warrants in Generac for buying up to $8B of generators."
     ],
     "openQuestions": [
-      "Does the 220 basis point wrapper spread compress as the structure becomes standard?",
+      "Does the wrapper spread compress as the structure becomes standard? Through August 2026 it widened, to roughly 300 to 325 basis points in same borrower comparisons.",
       "Do Compute SPV style tranches ever trade or get rated, creating a public price for TPU and GPU residual risk?",
       "Does gas pipeline capacity become the next queue, or does behind the meter simply relocate the constraint?",
       "How much of announced capacity converts to energized capacity, against a historical 24 to 40 percent range?",
@@ -1200,10 +2465,10 @@
     "methodNote": "This database records transactions and their disclosed terms. Interpretation and argument live in the published essays, not here."
   },
   "headline": {
-    "dealsTracked": 40,
-    "ppaCount": 17,
-    "maCount": 6,
-    "financingCount": 17,
+    "dealsTracked": 79,
+    "ppaCount": 36,
+    "maCount": 12,
+    "financingCount": 31,
     "creditSupportSpreadBps": 220,
     "spreadNote": "Google backed data centre projects borrowed at a median 7.1 percent against 9.3 percent for neocloud operators without that support",
     "largestProgrammeB": 200,
@@ -1219,6 +2484,8 @@
     "largestTransactionB": 40,
     "largestTransactionNote": "Aligned Data Centers, approximately $40B enterprise value, acquired by AIP, MGX and BlackRock's GIP from Macquarie funds",
     "nuclearContractedMW": 6260,
-    "nuclearContractedNote": "Contracted capacity from operating or restarting nuclear plants across five executed PPAs, against roughly 9.8GW of headline announcements that largely represent development options"
+    "nuclearContractedNote": "Contracted capacity from operating or restarting nuclear plants across five executed PPAs, against roughly 9.8GW of headline announcements that largely represent development options",
+    "wrapperSpreadUpdateBps": "300 to 325",
+    "wrapperSpreadUpdateNote": "Same borrower tests, Aug 2026: CoreWeave SOFR+225 (investment grade DDTL 4.0) against SOFR+550 (mixed customer DDTL 5.5), and IREN 6.0% (Microsoft anchored) against 9.0% (GPU collateral only)"
   }
 }
